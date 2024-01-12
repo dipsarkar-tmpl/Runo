@@ -1,0 +1,92 @@
+.most_viewed-container {
+    height: 600px;
+    width: 100%;
+    background: url("../../images/most_viewed.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 14% auto 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 245px;
+    width: 40%;
+
+}
+
+.category {
+    display:inline flex;
+    padding: 5px 10px;
+    margin-left: 250px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+}
+.date{
+    height: 30px;
+    width: 40px;
+    margin-left: 250px;
+    margin-top: 30px;
+    
+}
+.cat-content {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 12px;
+    width: 42px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.title-content {
+    color: #FFF;
+    text-align: center;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.des{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.des-content {
+    color: #E5E5E5;
+
+    text-align: center;
+    font-family: Lora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+
+.date-content {
+    color: #E5E5E5;
+    font-family: Lora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+hr{
+    height: 0;
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 260px;
+}

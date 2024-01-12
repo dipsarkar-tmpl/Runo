@@ -1,0 +1,20 @@
+.editor-container {
+  height: 466px;
+  max-width: 90%;
+  
+  margin: auto;
+  margin-bottom: 13%;
+}
+.editor-title {
+  width: 217px;
+  height: 46px;
+  margin-bottom: 5%;
+}
+.editor-title h2 {
+  color: #495057;
+  font-family: Lora;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
