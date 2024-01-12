@@ -1,21 +1,24 @@
-.nav-container{
+/* Navbar.css */
+
+.nav-container {
     position: relative;
     display: flex;
     flex-direction: column;
     background: url("../../images/nav.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     height: 600px;
     width: 100%;
-    
-}
-.f-blog{
+  }
+  
+  .f-blog {
     position: absolute;
-    margin: 20% 50% 30% 10%;
-}
-.nav-cat{
-    
-    
+    margin: 20% 5%; /* Adjusted margins for better responsiveness */
+    width: 90%; /* Utilize 90% of the available width */
+    max-width: 800px; /* Limit maximum width for very large screens */
+  }
+  
+  .nav-cat {
     height: 12px;
     width: 57px;
     display: inline-flex;
@@ -27,44 +30,38 @@
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.15);
     margin-bottom: 10px;
-    
-   
-    
-}
-.nav-title{
-    
-    
-    height: 92px;
-    width: 530px;
-    
-    
-    
-}
-.nav-dec{
-   
-    
+  }
+  
+  .nav-title {
+    width: 100%; /* Full width for all screens */
+  }
+  
+  .nav-dec {
     height: 40px;
-    width: 420px;
-    margin-left: 80px;
-
-}
-.nav-t{
+    width: 100%; /* Full width for all screens */
+    margin-left: 0; /* Reset margin for smaller screens */
+    margin-top: 10px; /* Improved spacing */
+  }
+  
+  .nav-t {
     color: #FFF;
     font-family: Lora;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-.nav-d{
+  }
+  
+  .nav-d {
     color: #E5E5E5;
     font-family: Lora;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; 
-}
-.nav-c{
+    line-height: 20px;
+  }
+  
+  .nav-c {
     color: #FFF;
     text-align: right;
     font-family: Roboto;
@@ -72,19 +69,30 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-.nav-date-main{
-    
-height: 20px;
-width: 65px;
-margin-top: 40px;
-}
-.nav-date{
-
+  }
+  
+  .nav-date-main {
+    height: 20px;
+    width: 65px;
+    margin-top: 40px;
+  }
+  
+  .nav-date {
     color: #E5E5E5;
     font-family: Lora;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .f-blog {
+      margin: 20% 5%;
+    }
+    
+    .nav-cat, .nav-title, .nav-dec {
+      width: 100%; /* Adjusted widths for smaller screens */
+    }
+  }
+  
