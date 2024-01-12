@@ -16,6 +16,7 @@ export default function Footer() {
                             <h4>Contact the Publisher</h4>
                             <p>mike@runo.com</p>
                             <p>+944 450 904 505</p>
+                            <p>+944 450 904 505</p>
                         </div>
                         <div className="upper-container-item2">
                             <h4><a href="/">Explorate</a></h4>
