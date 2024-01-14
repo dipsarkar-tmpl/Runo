@@ -9,14 +9,14 @@ import { SlSocialTwitter } from "react-icons/sl";
 export default function Footer() {
     return (
         <>
-            <footer className="footer-container">
+            <footer className="footer-container" id="footer">
                 <div className="upper-footer">
                     <div className="upper-container">
                         <div className="upper-container-item1">
                             <h4>Contact the Publisher</h4>
                             <p>mike@runo.com</p>
                             <p>+944 450 904 505</p>
-                            <p>+944 450 904 505</p>
+                           
                         </div>
                         <div className="upper-container-item2">
                             <h4><a href="/">Explorate</a></h4>
