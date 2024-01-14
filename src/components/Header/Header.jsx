@@ -23,7 +23,7 @@ export default function Header() {
             <li className="nav-item"><a href="/">Home</a></li>
             <li className="nav-item"><a href="/">About</a></li>
             <li className="nav-item"><a href="/">Articles</a></li>
-            <li className="nav-item"><a href="/">Contact Us</a></li>
+            <li className="nav-item"><a href="#footer">Contact Us</a></li>
           </ul>
         </div>
       </nav>
