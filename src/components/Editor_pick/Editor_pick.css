@@ -1,20 +1,35 @@
 .editor-container {
-  height: 466px;
+  height: auto;
   max-width: 90%;
-  
   margin: auto;
-  margin-bottom: 13%;
-}
-.editor-title {
-  width: 217px;
-  height: 46px;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
+
+.editor-title {
+  width: 100%;
+  height: 46px;
+  margin-bottom: 3%;
+}
+
 .editor-title h2 {
   color: #495057;
   font-family: Lora;
-  font-size: 36px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.editor-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Adjusted gap for better spacing between cards */
+  margin-top: 15px; /* Added margin to prevent overlap with the main container */
+}
+
+@media (min-width: 768px) {
+  .editor-cards {
+    margin-top: 0; /* Adjusted margin for larger screens */
+  }
 }
