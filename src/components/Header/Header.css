@@ -3,6 +3,19 @@
   margin: 0;
   padding: 0;
 }
+.border{
+  border-left: 1px solid white;
+  height: 1.25rem;
+}
+.icons{
+  height: 100%;
+  width: 100%;
+  object-fit: con;
+}
+.icons > svg{
+  height: 90%;
+  width: 90%;
+}
 
 .navbar {
   display: flex;
@@ -14,24 +27,23 @@
 }
 
 .left {
-  display: flex;
-  
-  color: #FFF;
-  font-family: "Spartan", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: normal;
-  height: 100%;
-  align-items: center;
-  padding: 0 20px;
-  cursor: pointer;
+  width: 4.312rem;
+  height: 1.375rem;
+  margin-left: 4.38rem;
+
+  color: #F8F9FA;
+font-family: Spartan;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 .right {
   display: flex;
-  
+  flex: 1;
   align-items: center;
-  justify-content: flex-end;
+ 
 }
 
 .menu-icon {
@@ -44,9 +56,10 @@
 .nav-items {
   list-style: none;
   display: flex;
-  flex: 1;
-  justify-content: flex-end; /* Align items to the right */
-  margin-right: 20px; /* Add margin to separate from the close icon */
+  justify-content: center;/* Align items to the right */
+   /* Add margin to separate from the close icon */
+  align-items: center;
+  margin-right: 4.38rem;
 }
 
 .nav-item {
@@ -56,13 +69,22 @@
   font-weight: 700;
   margin-right: 20px;
   cursor: pointer;
-  transition: color 0.3s ease;
+  text-wrap: wrap;
+  
+  
 }
 
 .nav-item a {
   text-decoration: none;
   color: white;
   font-weight: 600;
+}
+.contact{
+  height: 0.875rem;
+  width: 6rem;
+  text-wrap: nowrap;
+  margin-top: 2.06rem;
+  margin-bottom: 2.06rem;
 }
 
 @media only screen and (max-width: 768px) {
