@@ -1,170 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 a {
     text-decoration: none;
-    color: #E5E5E5;
-}
-
-.footer-container {
-    height: 70px;
-    width: 100%;
-    background-color: black;
-}
-
-.upper-footer {
+    color: #e5e5e5;
+  }
+  
+ 
+  
+  .upper-footer {
     height: 400px;
     width: 100%;
     background-color: #212529;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.lower-footer {
+  }
+  
+  .lower-footer {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    width: 100%;
-    background-color: #343A40;
-}
-
-.left-lower {
-    height: 18px;
-    width: 198px;
-    margin-left: 27px;
+    height: auto;
+    width: 98.7%;
+    background-color: #343a40;
     padding: 10px;
-}
-
-.left-lower p {
-    color: #E5E5E5;
+  }
+  
+  
+  .left-lower {
+    height: auto;
+    width: 100vw;
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+    
+  }
+  .right-lower {
+    height: auto;
+    width: 100vw;
+    margin: 10px;
+    padding: 10px;
+    text-align: end;
+  }
+  
+  .left-lower p,
+  .right-lower p {
+    color: #e5e5e5;
     font-family: Lora;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-
-.right-lower {
-    height: 18px;
-    width: 98px;
-    margin-right: 40px;
-    padding: 10px;
-}
-
-.right-lower p {
-    color: #E5E5E5;
-    text-align: right;
-    font-family: Lora;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.upper-container {
+  }
+  
+  .upper-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    height: 188px;
-    width: 85%;
-    
-}
-
-.upper-container-item1 {
-    height: 89px;
-    width: 20%;
-   
-
-}
-
-.upper-container-item2 {
-    height: 89px;
-    width: 20%;
-
-}
-
-.upper-container-item3 {
-    height: 89px;
-    width: 20%;
-
-}
-
-.upper-container-item4 {
-    height: 89px;
-    width: 20%;
-
-}
-
-.upper-container-item1 h4 {
-    color: #FFF;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .upper-container-item {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .upper-container-item1 h4 {
+    color: #e5e5e5;
     font-family: Lora;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 25px;
-    
-
-}
-
-.upper-container-item1 p {
-    color: #E5E5E5;
+  }
+  .upper-container-item2 h4 {
+    color: #e5e5e5;
+    font-family: Lora;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  .upper-container-item3 h4 {
+    color: #e5e5e5;
+    font-family: Lora;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  .upper-container-item4 h4 {
+    color: #e5e5e5;
+    font-family: Lora;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  
+  .upper-container-item1 p {
+    color: #e5e5e5;
     font-family: Lora;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-top: 20px;
-}
-
-.upper-container-item2 h4 {
-    color: #FFF;
-    font-family: Lora;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-    /* 138.889% */
-}
-
-.upper-container-item2 p {
-    color: #E5E5E5;
+  }
+  .upper-container-item2 p {
+    color: #e5e5e5;
     font-family: Lora;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-top: 20px;
-}
-
-.upper-container-item3 h4 {
-    color: #FFF;
-    font-family: Lora;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-    /* 138.889% */
-}
-
-.upper-container-item3 p {
-    color: #E5E5E5;
+  }
+  .upper-container-item3 p {
+    color: #e5e5e5;
     font-family: Lora;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: normal;
     margin-top: 20px;
-
-}
-.upper-container-item4 h4 {
-    color: #FFF;
-    font-family: Lora;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-}
-.upper-container-item4 icons{
-    background: #E5E5E5;
-}
-
- 
+  }
+  
+  @media (min-width: 768px) {
+    .left-lower,
+    .right-lower {
+      width: 45%;
+    }
+    .upper-container{
+        width: 100%;
+    }
+  
+    .upper-container-item {
+      width: 48%;
+    }
+  }
+  

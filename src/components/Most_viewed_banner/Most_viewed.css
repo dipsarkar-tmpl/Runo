@@ -1,36 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
 .most_viewed-container {
-    height: 600px;
+    height: 90vh;
     width: 100%;
     background: url("../../images/most_viewed.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: 14% auto 9%;
+    background-size: cover;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .content {
-    height: 245px;
-    width: 40%;
-
+    
+    width: 80%;
+    margin: 0 auto;
 }
 
 .category {
-    display:inline flex;
+    display: flex;
     padding: 5px 10px;
-    margin-left: 250px;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.15);
+    width: 4%;
 }
 .date{
     height: 30px;
     width: 40px;
-    margin-left: 250px;
+    margin: 0 auto;
     margin-top: 30px;
     
 }
@@ -59,7 +64,7 @@
     line-height: normal;
 }
 .des{
-    margin-left: 70px;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
@@ -87,6 +92,6 @@
 hr{
     height: 0;
     width: 30px;
+    margin: 0 auto;
     margin-top: 20px;
-    margin-left: 260px;
-}
+} 

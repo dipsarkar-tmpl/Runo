@@ -7,6 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import React, { useState } from "react";
 import "./Header.css";
 import { FaTimes, FaBars } from "react-icons/fa"; // Using FaTimes for close icon
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
