@@ -1,5 +1,5 @@
 .topic-container {
-  max-width: 90%;
+  max-width: 95%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -9,13 +9,14 @@
 
 @media (min-width: 768px) {
   .topic-container {
-    margin-top: 5%;
+    margin-top: 2%;
   }
 }
 
 .topic-title {
   width: 100%;
-  text-align: center;
+  text-align: start;
+    margin-left: 2rem;
 }
 
 .topic-cat {
@@ -23,6 +24,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-left: 2rem;
 }
 
 .topic-title h2 {

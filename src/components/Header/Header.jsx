@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { FaTimes, FaBars } from "react-icons/fa"; // Using FaTimes for close icon
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Header() {
           <ul className={`nav-items ${menuOpen ? "open" : ""}`}>
             <li className="nav-item"><a href="/">Home</a></li>
             <li className="nav-item"><a href="/">About</a></li>
-            <li className="nav-item"><a href="/">Articles</a></li>
+            <li className="nav-item"><Link to="/Articles">Articles</Link></li>
             <li className="nav-item"><a href="#footer">Contact Us</a></li>
           </ul>
         </div>
