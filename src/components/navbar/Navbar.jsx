@@ -9,9 +9,12 @@ export default function Navbar() {
       <div className='f-blog'>
         <div className="nav-cat"><p className='nav-c'>ADVENTURE</p></div>
         <div className='nav-title'><h1 className='nav-t'>Richird Norton photorealistic rendering as real photos</h1></div>
+        <div className='nav-info'>
         <div className='nav-date-main'><span className='nav-date'>10-10-2003</span></div>
+           <div className='div-hr'> <hr className='nav-hr' /></div> 
         <div className='nav-dec'>
           <span className='nav-d'>Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</span>
+        </div>
         </div>
       </div>
     </div>

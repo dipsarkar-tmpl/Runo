@@ -1,98 +1,110 @@
 /* Navbar.css */
 
 .nav-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background: url("../../images/nav.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-  }
-  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: url("../../images/nav.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 37.5rem;
+  width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.f-blog {
+  position: absolute;
+  margin: 20% 5%; /* Adjusted margins for better responsiveness */
+  width: 90%; /* Utilize 90% of the available width */
+  max-width: 800px; /* Limit maximum width for very large screens */
+}
+
+.nav-cat {
+  height: 12px;
+  width: 57px;
+  display: inline-flex;
+  padding: 5px 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 10px;
+}
+
+.nav-title {
+  width: 33.125rem;
+  height: 5.75rem;
+}
+.nav-info {
+  display: flex;
+  align-items: center;
+}
+
+.nav-dec {
+  height: 40px;
+  width: 100%; /* Full width for all screens */
+  margin-left: 0; /* Reset margin for smaller screens */
+  margin-top: 10px; /* Improved spacing */
+}
+.nav-hr {
+  width: 1.875rem;
+  height: 0.0625rem;
+  background: #e5e5e5;
+}
+.nav-t {
+  color: #fff;
+  font-family: Lora;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nav-d {
+  color: #e5e5e5;
+  font-family: Lora;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-wrap: wrap;
+}
+
+.nav-c {
+  color: #fff;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nav-date-main {
+  height: 20px;
+  text-wrap: nowrap;
+}
+
+.nav-date {
+  color: #e5e5e5;
+  font-family: Lora;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 768px) {
   .f-blog {
-    position: absolute;
-    margin: 20% 5%; /* Adjusted margins for better responsiveness */
-    width: 90%; /* Utilize 90% of the available width */
-    max-width: 800px; /* Limit maximum width for very large screens */
+    margin: 20% 5%;
   }
-  
-  .nav-cat {
-    height: 12px;
-    width: 57px;
-    display: inline-flex;
-    padding: 5px 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.15);
-    margin-bottom: 10px;
-  }
-  
-  .nav-title {
-    width: 100%; /* Full width for all screens */
-  }
-  
+
+  .nav-cat,
+  .nav-title,
   .nav-dec {
-    height: 40px;
-    width: 100%; /* Full width for all screens */
-    margin-left: 0; /* Reset margin for smaller screens */
-    margin-top: 10px; /* Improved spacing */
+    width: 100%; /* Adjusted widths for smaller screens */
   }
-  
-  .nav-t {
-    color: #FFF;
-    font-family: Lora;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .nav-d {
-    color: #E5E5E5;
-    font-family: Lora;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-  }
-  
-  .nav-c {
-    color: #FFF;
-    text-align: right;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .nav-date-main {
-    height: 20px;
-    width: 65px;
-    margin-top: 40px;
-  }
-  
-  .nav-date {
-    color: #E5E5E5;
-    font-family: Lora;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .f-blog {
-      margin: 20% 5%;
-    }
-    
-    .nav-cat, .nav-title, .nav-dec {
-      width: 100%; /* Adjusted widths for smaller screens */
-    }
-  }
-  
+}
