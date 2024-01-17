@@ -9,15 +9,30 @@ import Popular_topics from "./components/Popular_topics/Popular_topics";
 
 import Editor_pick from "./components/Editor_pick/Editor_pick";
 
+import Single_post from "./components/Single_post/Single_post";
+import Post_info from "./components/Post_info/Post_info";
+import Related from "./components/Related_posts/Related";
+import Home from "./Pages/Home";
+import SingleArticle from "./Pages/SingleArticle";
+
+import { BrowserRouter , Switch, Route, Link,Routes } from "react-router-dom";
 function App() {
   return (
-    <>
-      <Navbar />
-      <Popular_topics style={{"margin-top":"35%"}} />
-      <Most_viewed />
-      <Editor_pick />
-      <Footer />
-    </>
+    
+    <BrowserRouter>
+    <Routes>
+        
+          <Route path="/Articles"
+           element ={<SingleArticle/>} />
+          <Route path="/"
+           element ={<Home/>} />
+
+        
+      </Routes>
+    </BrowserRouter>
+
+      
+    
   );
 }
 

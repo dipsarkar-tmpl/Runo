@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.post-container {
+  
+  max-width: 84%;
+  display: flex;
+  margin-top: 4%;
+  margin-left: 5%;
+  
+}
+.post-date {
+  height: 25px;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+.post-date span {
+  height: 25px;
+  width: 60px;
+  color: #495057;
+  font-family: Lora;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 208.333% */
+}
+.post-content {
+  
+  width: 85%;
+}
+.post-content-p {
+  color: #495057;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+}
+.post-content-h1 {
+  color: #d4a373;
+  font-family: Lora;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 83%;
+}
+hr {
+  width: 35px;
+  height: 1px;
+  background: #c4c4c4;
+  margin-top: 10px;
+}
+.date-span {
+  margin-right: 5px;
+}
+.time-span {
+  margin-left: 4px;
+}
+@media (max-width: 760px) {
+  .post-container {
+    height: auto; /* Adjust the height to fit the content */
+    max-width: 100%; /* Use the full width of the screen */
+    flex-direction: column; /* Stack the elements vertically */
+    margin-top: 2%; /* Reduce the top margin */
+    margin-left: 0; /* Remove the left margin */
+
+  }
+
+  .post-date {
+    width: 100%; /* Use the full width of the screen */
+    justify-content: center; /* Center the date */
+    margin-right: 0; /* Remove the right margin */
+  }
+
+  .post-content {
+    width: 100%; /* Use the full width of the screen */
+    margin: 1.4rem;
+  }
+
+  .post-content-p {
+    font-size: 12px; /* Reduce the font size */
+    line-height: 20px; /* Reduce the line height */
+  }
+
+  .post-content-h1 {
+    font-size: 24px; /* Reduce the font size */
+    max-width: 100%; /* Use the full width of the screen */
+  }
+}

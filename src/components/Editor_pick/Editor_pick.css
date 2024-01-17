@@ -1,15 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .editor-container {
   height: auto;
-  max-width: 90%;
+  width: 95%;
   margin: auto;
   margin-top: 5%;
   margin-bottom: 5%;
+  
 }
 
 .editor-title {
   width: 100%;
   height: 46px;
   margin-bottom: 3%;
+  margin-left: 4.5%;
 }
 
 .editor-title h2 {
