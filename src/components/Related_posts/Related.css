@@ -1,0 +1,49 @@
+.related-post-container {
+  height: 39.0625rem;
+  width: 100%;
+  background: rgba(229, 229, 229, 0.30);
+}
+.related-contaier {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.related-title{
+    height:  1.5625rem;
+    width: 7.25rem;
+    margin-top: 8%;
+    margin-left: 3.5rem;
+}
+.related-title-h3 {
+  color: #495057;
+  font-family: Lora;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5625rem; /* 138.889% */
+}
+@media only screen and (max-width: 780px) {
+  .related-post-container {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Media query for mobile phones */
+@media only screen and (max-width: 480px) {
+  .related-post-container {
+    height: auto;
+    margin-bottom: 3rem; /* Add space at the bottom to prevent overlap */
+  }
+
+  .related-container {
+    padding: 2rem;
+  }
+
+  .related-title {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
