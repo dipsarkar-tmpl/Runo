@@ -14,7 +14,7 @@ export default function Related() {
            <Cards_type2/>
         </div>
         </div>
-        
+
 
     </div>
     </>
