@@ -1,5 +1,5 @@
 .card2-container {
-  width: 100%;
+  width: 98%;
   height: 350px;
   flex-shrink: 0;
   background: url("../../images/Blog\ Image.png");
@@ -16,8 +16,9 @@
   margin: auto;
   justify-content: center;
   position: absolute;
-  margin-top: 35%;
+  margin-top: 20%;
   margin-left: 10%;
+ 
 }
 .card2-cat {
   display: inline-flex;
@@ -77,4 +78,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px; /* 166.667% */
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 850px) {
+  .main-content {
+    margin-left: 5%;
+  }
+
+  .card2-cat {
+    margin-left: 5%;
+  }
+  .card2-des p{
+    margin-top: 1rem;
+  }
 }
