@@ -41,7 +41,7 @@ line-height: normal;
 
 .right {
   display: flex;
-  flex: 1;
+  
   align-items: center;
  
 }
