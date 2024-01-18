@@ -21,7 +21,6 @@ export default function Cards() {
           <Card />
           <Card />
           <Card />
-          
         </>
       ) : (
         <>
@@ -32,11 +31,17 @@ export default function Cards() {
         </>
       )}
 
-      {showAllCards ? (
-        <button className="btn-load-less" onClick={toggleCardDisplay}>Load Less</button>
-      ) : (
-        <button className="btn-load-more "onClick={toggleCardDisplay}>Load More</button>
-      )}
+      <div className="btn-container">
+        {showAllCards ? (
+          <button className="btn-load-less" onClick={toggleCardDisplay}>
+            Load Less
+          </button>
+        ) : (
+          <button className="btn-load-more" onClick={toggleCardDisplay}>
+            Load More
+          </button>
+        )}
+      </div>
     </div>
   );
 }

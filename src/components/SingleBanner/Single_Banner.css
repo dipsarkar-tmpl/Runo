@@ -1,0 +1,76 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .Single-banner-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url("../../images/Image\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37.5rem;
+    
+    width: 100vw;
+    flex-shrink: 0;
+}
+.banner-cat{
+    height: 12px;
+    width: 57px;
+    display: inline-flex;
+    padding: 5px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    margin-bottom: 10px;
+}
+.ban-c{
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.ban-t{
+    color: #FFF;
+text-align: center;
+font-family: Lora;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.ban-i{
+    color: #E5E5E5;
+text-align: center;
+font-family: Lora;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 166.667% */
+}
+.ban-auth-name{
+    color: #FFF;
+text-align: center;
+font-family: Lora;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 166.667% */
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+    margin: auto;
+    margin-top: 77px;
+    gap: 15px;
+    padding: 10px;
+}

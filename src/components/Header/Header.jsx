@@ -1,5 +1,5 @@
 
-import { FaFacebook } from "react-icons/fa6";
+import { FaFacebook, FaLeftLong } from "react-icons/fa6";
 import { FaSquareTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
@@ -30,12 +30,12 @@ export default function Header() {
         </div>
         <div className="right">
           <div className="menu-icon" onClick={toggleMenu}>
-            {menuOpen ? <FaTimes style={{ color: "white", display:"flex",justifyContent:"end" }} /> : <FaBars style={{ color: "white" }} />}
+            {menuOpen ? <FaTimes style={{ color: "white", marginLeft:"90%" }} /> : <FaBars style={{ color: "white" }} />}
           </div>
           <ul className={`nav-items ${menuOpen ? "open" : ""}`}>
             <li onClick={() => handleNavItemClick(0)} className={`nav-item Home ${activeNavItem === 0 ? "active" : ""}`}><Link to="/">Home</Link></li>
             <li onClick={() => handleNavItemClick(1)} className={`nav-item About ${activeNavItem === 1 ? "active" : ""}`}><Link to="/">About</Link></li>
-            <li onClick={() => handleNavItemClick(2)} className={`nav-item Articles ${activeNavItem === 2 ? "active" : ""}`}><Link to="/Articles">Articles</Link></li>
+            <li onClick={() => handleNavItemClick(2)} className={`nav-item Articles ${activeNavItem === 2 ? "active" : ""}`}><Link to="/">Articles</Link></li>
             <li onClick={() => handleNavItemClick(3)} className={`nav-item contact ${activeNavItem === 3 ? "active" : ""}`}><Link to="/">Contact Us</Link></li>
             <li className="nav-item border"></li>
             <li className="nav-item icons facebook" ><FaFacebook /></li>

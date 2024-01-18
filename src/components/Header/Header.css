@@ -116,16 +116,21 @@ line-height: normal;
     display: none;
     flex-direction: column;
     align-items: flex-end; /* Align items to the right */
-    width: 40%;
+    
     position: absolute;
     background: rgba(0, 0, 0, 0.2); /* Dark background color */
     top: 80px;
     right: 0; /* Align to the right */
     z-index: 1;
   }
-
+.contact{
+  width: 66px;
+}
   .nav-items.open {
     display: flex;
+    margin-right: 0px;
+
+
   }
 
   .navbar.open {
@@ -146,4 +151,15 @@ line-height: normal;
   .right {
     order: 3; /* Move the menu icons to the right */
   }
+}
+.nav-item {
+  transition: transform 0.3s ease; /* Add a smooth transition effect for the transform property */
+}
+
+.nav-item:hover {
+  transform: scale(1.1); /* Apply a slight scale transformation on hover */
+}
+
+.nav-item a:hover {
+  color: #fff; /* Change the text color on hover */
 }

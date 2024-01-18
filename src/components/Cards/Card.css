@@ -1,8 +1,11 @@
 .card-container {
-  
   cursor: pointer;
- 
-  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
 }
 
 .cat-container {

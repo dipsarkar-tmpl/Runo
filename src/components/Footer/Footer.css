@@ -34,7 +34,7 @@ a {
   .left-lower {
     height: auto;
     width: 14rem;
-    margin-left: 3.37rem;
+    margin-left: 51px;
     
     padding: 10px;
     text-align: start;
@@ -43,7 +43,7 @@ a {
   .right-lower {
     height: auto;
     width: 8rem;
-    margin-right: 3.37rem;
+    margin-right: 40px;
     
     padding: 10px;
     text-align: end;
@@ -140,6 +140,13 @@ a {
   
     .upper-container-item {
       width: 48%;
+    }
+    .left-lower{   width: 43%;
+    text-wrap: nowrap;
+    margin-left: 10px;
+    }
+    .right-lower{
+      margin-right: 18px;
     }
   }
   
