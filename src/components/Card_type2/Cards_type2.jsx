@@ -11,13 +11,12 @@ export default function Cards_type2() {
   
   const  settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow:4 ,
-    slidesToScroll: 4,
+    slidesToShow:3 ,
+    slidesToScroll: 3,
     initialSlide: 0,
-    nextArrow: <SampleNextArrow/>,
-    prevArrow: <SamplePrevArrow/>,
+    
     responsive: [
       {
         breakpoint: 1024,
@@ -30,20 +29,20 @@ export default function Cards_type2() {
       },
      
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          dots:false
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots:true
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 680,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots:false
+          dots:true
         }
       }
     ]

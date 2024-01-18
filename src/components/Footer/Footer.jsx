@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
             <div className="upper-container-item4">
               <h4>Connections</h4>
-              <FaFacebook style={{ backgroundColor: "white", margin: "8px" }} />
+              <FaFacebook style={{ backgroundColor: "white", margin: "8px", }} />
               <FaTwitterSquare
                 style={{ backgroundColor: "white", margin: "8px" }}
               />

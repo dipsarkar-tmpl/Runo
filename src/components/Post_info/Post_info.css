@@ -2,7 +2,7 @@
   height: 172px;
   max-width: 65%;
   margin: 5% auto 0%;
-
+  margin-left: 23%;
   
 }
 .post-info-category {
@@ -97,6 +97,7 @@
 @media only screen and (max-width: 768px) {
   .post-info-container {
     max-width: 90%;
+    margin: auto;
   }
 }
 

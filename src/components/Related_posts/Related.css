@@ -4,7 +4,7 @@
     background: rgba(229, 229, 229, 0.30);
   }
   .related-contaier {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
       height:  1.5625rem;
       width: 7.25rem;
       margin-top: 8%;
-      margin-left: 3.5rem;
+      margin-left: 4rem;
   }
   .related-title-h3 {
     color: #495057;
@@ -24,10 +24,18 @@
     font-weight: 700;
     line-height: 1.5625rem; /* 138.889% */
   }
+  @media only screen and (max-width: 1080px){
+    .related-title{
+      margin-left: 3.4rem;
+    }
+  }
   @media only screen and (max-width: 780px) {
     .related-post-container {
       height: auto;
       margin-bottom: 2rem;
+    }
+    .related-title{
+      margin-left: 1.5rem;
     }
   }
   

@@ -20,16 +20,20 @@
 .navbar {
   display: flex;
   background: rgba(0, 0, 0, 0.20); /* Dark background color */
-  width: 100vw;
+  width: 100dvw;
   height: 80px;
   align-items: center;
   justify-content: space-between;
 }
-
 .left {
   width: 4.312rem;
   height: 1.375rem;
   margin-left: 4.38rem;
+}
+
+.left h2{
+ 
+  
 
   color: #F8F9FA;
 font-family: Spartan;
@@ -86,20 +90,28 @@ line-height: normal;
   margin-top: 2.06rem;
   margin-bottom: 2.06rem;
 }
+.Home{
+  border-bottom: 2px solid #D4A373;
+  
+}
 
 @media only screen and (max-width: 768px) {
   .menu-icon {
     display: flex;
+    order: 2; /* Move the menu icon to the right */
+    float: right;
   }
-  .nav-cat {
-    width: 14%;
-}
-
+  .icons{
+    display: none;
+  }
+  .border{
+    display: none;
+  }
   .nav-items {
     display: none;
     flex-direction: column;
     align-items: flex-end; /* Align items to the right */
-    width: 50%;
+    width: 40%;
     position: absolute;
     background: rgba(0, 0, 0, 0.2); /* Dark background color */
     top: 80px;
@@ -118,5 +130,15 @@ line-height: normal;
 
   .nav-item {
     margin: 10px 20px;
+  }
+
+  .left {
+    margin-left: 1.5rem; /* Remove the left margin */
+    order: 1; /* Move the logo text to the left */
+    flex-grow: 1; /* Allow the logo text to take up all available space */
+  }
+
+  .right {
+    order: 3; /* Move the menu icons to the right */
   }
 }

@@ -33,16 +33,18 @@ a {
   
   .left-lower {
     height: auto;
-    width: 100vw;
-    margin: 10px;
+    width: 14rem;
+    margin-left: 3.37rem;
+    
     padding: 10px;
     text-align: start;
     
   }
   .right-lower {
     height: auto;
-    width: 100vw;
-    margin: 10px;
+    width: 8rem;
+    margin-right: 3.37rem;
+    
     padding: 10px;
     text-align: end;
   }
@@ -62,7 +64,7 @@ a {
     justify-content: space-between;
     gap: 10px;
     height: auto;
-    width: 100%;
+    width: 77%;
     margin: 0 auto;
     padding: 10px;
   }
@@ -127,7 +129,7 @@ a {
     margin-top: 20px;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .left-lower,
     .right-lower {
       width: 45%;

@@ -7,14 +7,13 @@
 .nav-container {
   position: relative;
   display: flex;
-  
   flex-direction: column;
   background: url("../../images/nav.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 37.5rem;
-  width: 100%;
-  width: 100%;
+  
+  width: 100dvw;
   flex-shrink: 0;
 }
 
@@ -46,6 +45,7 @@
 .nav-info {
   display: flex;
   align-items: center;
+  
 }
 
 .nav-dec {
@@ -56,8 +56,10 @@
 }
 .nav-hr {
   width: 1.875rem;
-  height: 0.0625rem;
+ margin: 0 0.8rem;
   background: #e5e5e5;
+  height: 0;
+  margin-bottom: 0.2rem;
 }
 .nav-t {
   color: #fff;
@@ -76,6 +78,9 @@
   font-weight: 400;
   line-height: 20px;
   text-wrap: wrap;
+  width: 26.25rem;
+  height: 2.5rem;
+  margin-top: 1rem;
 }
 
 .nav-c {
@@ -101,15 +106,40 @@
   font-weight: 400;
   line-height: normal;
 }
-
 @media only screen and (max-width: 768px) {
   .f-blog {
-    margin: 20% 5%;
+    height: auto;
+    margin-top: 43%;
   }
 
-  .nav-cat,
+ .nav-date{
+  text-wrap: nowrap;
+ }
   .nav-title,
   .nav-dec {
     width: 100%; /* Adjusted widths for smaller screens */
   }
+  
 }
+@media(max-width:480px){
+  .nav-info{
+    margin-top: 30%;
+  }
+  .f-blog {
+    height: auto;
+    margin-top: 43%;
+  }
+
+ .nav-date{
+  text-wrap: nowrap;
+ }
+  .nav-title,
+  .nav-dec {
+    width: 100%; /* Adjusted widths for smaller screens */
+  }
+  .nav-info{
+    margin-top: 30%;
+  }
+}
+
+

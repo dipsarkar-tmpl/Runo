@@ -12,7 +12,7 @@
 }
 .post-date {
   height: 25px;
-  width: 13%;
+  width: 20%;
   display: flex;
   align-items: center;
   margin-right: 3%;
@@ -52,7 +52,9 @@ hr {
   width: 35px;
   height: 1px;
   background: #c4c4c4;
-  margin-top: 10px;
+  margin-top: -1px;
+  margin-left: 5px;
+    margin-right: 7px;
 }
 .date-span {
   margin-right: 5px;

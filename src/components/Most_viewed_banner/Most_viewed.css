@@ -3,8 +3,9 @@
     padding: 0;
   }
 .most_viewed-container {
-    height: 90vh;
+    height: 37.5rem;
     width: 100%;
+    flex-shrink: 0;
     background: url("../../images/most_viewed.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,12 +13,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 95px;
 }
 
 .content {
     
-    width: 80%;
-    margin: 0 auto;
+    width: 40%;
+    margin:  auto;
 }
 
 .category {
@@ -31,10 +33,11 @@
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.15);
     width: 4%;
+    margin-bottom: 1rem;
 }
 .date{
-    height: 30px;
-    width: 40px;
+    height: 0.9375rem;
+    width: 3.6875rem;
     margin: 0 auto;
     margin-top: 30px;
     
@@ -89,9 +92,44 @@
     line-height: normal;
     
 }
-hr{
+.most-viewed-hr{
     height: 0;
     width: 30px;
     margin: 0 auto;
     margin-top: 20px;
 } 
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .most_viewed-container {
+      height: auto;
+      margin-top: 2%;
+    }
+  
+    .content {
+      width: 80%;
+    }
+  
+    .category {
+      width: 20%;
+    }
+    
+    .date {
+      margin-top: 10px;
+    }
+    
+    .title-content {
+      font-size: 24px;
+    }
+    
+    .des-content {
+      font-size: 10px;
+    }
+    
+    .date-content {
+      font-size: 10px;
+    }
+    
+    .most-viewed-hr {
+      margin-top: 10px;
+    }
+  }

@@ -14,7 +14,7 @@ export default function Most_viewed() {
             <div className="des">
                 <p className="des-content">Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.</p>
             </div>
-            <hr />
+            <hr className="most-viewed-hr" />
             <div className="date">
                 <p className="date-content">08.08.2021</p>
             </div>

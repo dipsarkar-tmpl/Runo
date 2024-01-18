@@ -1,27 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 .editor-container {
-  height: auto;
-  width: 95%;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
   
+  
+  
+  margin-bottom: 125px;
+   
 }
 
 .editor-title {
-  width: 100%;
-  height: 46px;
+  width: 13.5625rem;
+  height: 2.875rem;
   margin-bottom: 3%;
-  margin-left: 4.5%;
+  margin-left: 4.8%;
 }
 
 .editor-title h2 {
   color: #495057;
   font-family: Lora;
-  font-size: 24px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

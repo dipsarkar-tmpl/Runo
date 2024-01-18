@@ -1,30 +1,18 @@
 .topic-container {
-  max-width: 95%;
-  margin: auto;
+  max-width: 90%;
+  margin:  60px auto ;
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
   padding: 2%;
 }
 
-@media (min-width: 768px) {
-  .topic-container {
-    margin-top: 2%;
-  }
-}
-
-.topic-title {
-  width: 100%;
-  text-align: start;
-    margin-left: 2rem;
-}
 
 .topic-cat {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-left: 2rem;
+ 
 }
 
 .topic-title h2 {
@@ -53,35 +41,22 @@
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
-  
-  
-}
-
-.right-cat {
-  margin-top: 1rem;
-  text-align: center;
 }
 
 .right-cat a {
-  
   color: #495057;
   font-family: Lora, serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   text-decoration: none;
-  
+  margin-top: 1rem;
+  margin-right: 0.5rem;
 }
 
 .item1 a {
   color: rgb(229, 229, 61);
 }
 
-.topic-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-}
 
 /* Adjust card styles as needed */
 .topic-cards .card {
@@ -89,4 +64,36 @@
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Add other card styles */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for medium screens */
+  .topic-container {
+    padding: 1.5%;
+  }
+}
+@media (max-width: 768px) {
+  .left-cat-items {
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .left-cat-item a{
+    font-size: 5px;
+  }
+
+  .right-cat a{
+    font-size: 10px;
+    
+  }
+  
+  .topic-container{
+    margin:  30px auto ;
+  }
+
+  
+
+  .left-cat-item a {
+    font-size: 12px;
+  }
 }
