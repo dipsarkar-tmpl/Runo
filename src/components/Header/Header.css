@@ -10,7 +10,7 @@
 .icons{
   height: 100%;
   width: 100%;
-  object-fit: con;
+  object-fit: contain;
 }
 .icons > svg{
   height: 90%;
@@ -24,6 +24,8 @@
   height: 80px;
   align-items: center;
   justify-content: space-between;
+  
+  
 }
 .left {
   width: 4.312rem;
@@ -90,10 +92,13 @@ line-height: normal;
   margin-top: 2.06rem;
   margin-bottom: 2.06rem;
 }
-.Home{
+
+
+
+.nav-item.active {
   border-bottom: 2px solid #D4A373;
-  
 }
+
 
 @media only screen and (max-width: 768px) {
   .menu-icon {
