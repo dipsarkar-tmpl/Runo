@@ -29,7 +29,7 @@ export default function Header() {
           <ul className={`nav-items ${menuOpen ? "open" : ""}`}>
             <li className="nav-item Home"><a href="/">Home</a></li>
             <li className="nav-item About"><a href="/">About</a></li>
-            <li className="nav-item Articles"><link to=""/>Articles</li>
+            <li className="nav-item Articles"><Link to="/Articles"/>Articles</li>
             <li className="nav-item contact"><a href="/">Contact Us</a></li>
             <li className="nav-item border"></li>
             <li className="nav-item icons facebook" ><FaFacebook /></li>
