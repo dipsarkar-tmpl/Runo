@@ -1,9 +1,9 @@
 import "./Footer.css";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { SlSocialTwitter } from "react-icons/sl";
-import { FaInstagramSquare } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io5";
+import { FaFacebook, FaLeftLong } from "react-icons/fa6";
+import { FaSquareTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -39,15 +39,13 @@ export default function Footer() {
             </div>
             <div className="upper-container-item4">
               <h4>Connections</h4>
-              <FaFacebook style={{ backgroundColor: "white", margin: "8px", }} />
-              <FaTwitterSquare
-                style={{ backgroundColor: "white", margin: "8px" }}
-              />
-              <FaInstagramSquare style={{ backgroundColor: "white", margin: "8px" }}/>
-              <IoLogoYoutube style={{ backgroundColor: "white", margin: "8px" }} />
-              <SlSocialTwitter
-                style={{ backgroundColor: "white", margin: "8px" }}
-              />
+              <div className="foot-icons">
+              <FaFacebook style={{backgroundColor:"white", margin:"10px",marginRight:"10px"}} /> 
+              <FaSquareTwitter style={{backgroundColor:"white",margin:"10px"}}/>
+              <FaYoutube style={{backgroundColor:"white",margin:"10px"}}/>
+              <FaPinterest style={{backgroundColor:"white",margin:"10px"}}/>
+              <FaInstagram style={{backgroundColor:"white",margin:"10px"}}/>
+              </div>
             </div>
           </div>
         </div>
