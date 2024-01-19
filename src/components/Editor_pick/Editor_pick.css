@@ -38,4 +38,7 @@
   .editor-cards {
     margin-top: 0; /* Adjusted margin for larger screens */
   }
+  .editor-title{
+    margin-bottom: 70px;
+  }
 }
