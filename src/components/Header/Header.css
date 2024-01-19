@@ -107,7 +107,7 @@ line-height: normal;
     float: right;
   }
   .navbar.open{
-    justify-content: space-between;
+    justify-content:space-between;
   }
   .icons{
     display: none;
@@ -136,7 +136,10 @@ line-height: normal;
 
   }
 
- 
+  .navbar.open {
+    flex-direction: column;
+    height: auto;
+  }
 
   .nav-item {
     margin: 10px 20px;

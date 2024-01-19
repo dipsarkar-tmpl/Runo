@@ -29,6 +29,7 @@ a {
     background-color: #343a40;
     padding: 10px;
   }
+ 
   
   
   .left-lower {
@@ -135,7 +136,7 @@ a {
       width: 45%;
     }
     .upper-container{
-        width: 100%;
+        width: 90%;
     }
   
     .upper-container-item {
