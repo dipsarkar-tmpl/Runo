@@ -30,7 +30,7 @@ export default function Header() {
         </div>
         <div className="right">
           <div className="menu-icon" onClick={toggleMenu}>
-            {menuOpen ? <FaTimes style={{ color: "white", marginLeft:"90%" }} /> : <FaBars style={{ color: "white" }} />}
+            {menuOpen ? <FaTimes style={{ color: "white" }} /> : <FaBars style={{ color: "white" }} />}
           </div>
           <ul className={`nav-items ${menuOpen ? "open" : ""}`}>
             <li onClick={() => handleNavItemClick(0)} className={`nav-item Home ${activeNavItem === 0 ? "active" : ""}`}><Link to="/">Home</Link></li>
