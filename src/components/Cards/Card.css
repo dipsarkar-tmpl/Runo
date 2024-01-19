@@ -4,8 +4,9 @@
 }
 
 .card-container:hover {
-  transform: translateY(-5px); /* Lift the card on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+  transform: translateY(-10px); /* Lift the card on hover */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+  
 }
 
 .cat-container {
