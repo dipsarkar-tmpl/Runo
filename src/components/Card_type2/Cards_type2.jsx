@@ -12,8 +12,11 @@ export default function Cards_type2() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
     
 
     responsive: [
@@ -38,6 +41,14 @@ export default function Cards_type2() {
       },
       {
         breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
