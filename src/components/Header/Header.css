@@ -136,10 +136,7 @@ line-height: normal;
 
   }
 
-  .navbar.open {
-    flex-direction: column;
-    height: auto;
-  }
+  
 
   .nav-item {
     margin: 10px 20px;
