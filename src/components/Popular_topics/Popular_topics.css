@@ -67,6 +67,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Add other card styles */
 }
+@media(max-width-439px){
+  
+}
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Styles for medium screens */
