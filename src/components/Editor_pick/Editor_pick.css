@@ -4,9 +4,9 @@
 }
 .editor-container {
   
-  margin-left: -6px;
-  margin-right: -26px;
+
   
+  margin: auto;
   margin-bottom: 125px;
    
 }
@@ -40,5 +40,11 @@
   }
   .editor-title{
     margin-bottom: 70px;
+  }
+  @media (max-width:480px){
+    .editor-container{
+      margin-bottom: -9px;
+    }
+
   }
 }

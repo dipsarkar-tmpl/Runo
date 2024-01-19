@@ -1,4 +1,7 @@
+// Cards.jsx
+
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Cards.css";
 import Card from "./Card";
 
@@ -13,21 +16,21 @@ export default function Cards() {
     <div className="cards-container">
       {showAllCards ? (
         <>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
         </>
       ) : (
         <>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
+          <Link to="/single-article"><Card /></Link>
         </>
       )}
 

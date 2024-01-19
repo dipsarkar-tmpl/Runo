@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
     <Routes>
         
-          <Route path="/Articles"
+          <Route path="/single-article"
            element ={<SingleArticle/>} />
           <Route path="/"
            element ={<Home/>} />
@@ -37,3 +37,6 @@ function App() {
 }
 
 export default App;
+
+
+

@@ -37,8 +37,8 @@
   margin-top: 4%;
 }
 .author-img {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   background: url("../../images/Ellipse\ 4.png");
   border-radius: 50px;
   background-repeat: no-repeat;
@@ -98,12 +98,14 @@
   .post-info-container {
     max-width: 90%;
     margin: auto;
+    margin-top: 30px;
   }
 }
 
 /* Media query for mobile phones */
 @media only screen and (max-width: 480px) {
   .post-info-container {
-    max-width: 100%;
+    max-width: 90%;
+    margin-top: 30px;
   }
 }

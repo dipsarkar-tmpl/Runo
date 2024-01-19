@@ -1,7 +1,8 @@
 .related-post-container {
-    height: 39.0625rem;
+    
     width: 100%;
     background: rgba(229, 229, 229, 0.30);
+    margin-bottom: 85px;
   }
   .related-contaier {
     max-width: 100%;
@@ -42,7 +43,8 @@
   @media only screen and (max-width: 480px) {
     .related-post-container {
       height: auto;
-      margin-bottom: 3rem; /* Add space at the bottom to prevent overlap */
+      margin-top: 50px;
+      margin-bottom: 50px; /* Add space at the bottom to prevent overlap */
     }
   
     .related-container {

@@ -62,12 +62,17 @@ hr {
 .time-span {
   margin-left: 4px;
 }
+@media(max-width:1080px){
+  .time-span{
+    text-wrap: nowrap;
+  }
+}
 @media (max-width: 760px) {
   .post-container {
     height: auto; /* Adjust the height to fit the content */
     max-width: 100%; /* Use the full width of the screen */
     flex-direction: column; /* Stack the elements vertically */
-    margin-top: 2%; /* Reduce the top margin */
+    margin-top: 75px; /* Reduce the top margin */
     margin-left: 0; /* Remove the left margin */
 
   }
@@ -79,7 +84,7 @@ hr {
   }
 
   .post-content {
-    width: 100%; /* Use the full width of the screen */
+    width: 95%; /* Use the full width of the screen */
     margin: 1.4rem;
   }
 
