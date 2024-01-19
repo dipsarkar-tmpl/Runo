@@ -103,8 +103,11 @@ line-height: normal;
 @media only screen and (max-width: 768px) {
   .menu-icon {
     display: flex;
-    order: 2; /* Move the menu icon to the right */
+     /* Move the menu icon to the right */
     float: right;
+  }
+  .navbar.open{
+    justify-content: space-between;
   }
   .icons{
     display: none;
@@ -133,10 +136,7 @@ line-height: normal;
 
   }
 
-  .navbar.open {
-    flex-direction: column;
-    height: auto;
-  }
+ 
 
   .nav-item {
     margin: 10px 20px;
@@ -144,12 +144,12 @@ line-height: normal;
 
   .left {
     margin-left: 1.5rem; /* Remove the left margin */
-    order: 1; /* Move the logo text to the left */
+     /* Move the logo text to the left */
     flex-grow: 1; /* Allow the logo text to take up all available space */
   }
 
   .right {
-    order: 3; /* Move the menu icons to the right */
+    /* Move the menu icons to the right */
   }
 }
 .nav-item {
