@@ -40,11 +40,11 @@ export default function Footer() {
             <div className="upper-container-item4">
               <h4>Connections</h4>
               <div className="foot-icons">
-              <FaFacebook style={{backgroundColor:"white", margin:"10px",marginRight:"10px"}} /> 
-              <FaSquareTwitter style={{backgroundColor:"white",margin:"10px"}}/>
-              <FaYoutube style={{backgroundColor:"white",margin:"10px"}}/>
-              <FaPinterest style={{backgroundColor:"white",margin:"10px"}}/>
-              <FaInstagram style={{backgroundColor:"white",margin:"10px"}}/>
+              <FaFacebook style={{color:"white", margin:"10px",marginRight:"10px"}} /> 
+              <FaSquareTwitter style={{color:"white",margin:"10px"}}/>
+              <FaYoutube style={{color:"white",margin:"10px"}}/>
+              <FaPinterest style={{color:"white",margin:"10px"}}/>
+              <FaInstagram style={{color:"white",margin:"10px"}}/>
               </div>
             </div>
           </div>
