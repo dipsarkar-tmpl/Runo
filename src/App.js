@@ -16,6 +16,8 @@ import Home from "./Pages/Home";
 import SingleArticle from "./Pages/SingleArticle";
 
 import { BrowserRouter , Switch, Route, Link,Routes } from "react-router-dom";
+import Contact from "./components/ContactUs/Contact";
+import About from "./components/About/About";
 function App() {
   return (
     
@@ -26,6 +28,10 @@ function App() {
            element ={<SingleArticle/>} />
           <Route path="/"
            element ={<Home/>} />
+           <Route path="/Contact"
+           element ={<Contact/>} />
+           <Route path="/About"
+           element ={<About/>} />
 
         
       </Routes>

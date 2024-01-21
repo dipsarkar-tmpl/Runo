@@ -34,9 +34,9 @@ export default function Header() {
           </div>
           <ul className={`nav-items ${menuOpen ? "open" : ""}`}>
             <li onClick={() => handleNavItemClick(0)} className={`nav-item Home ${activeNavItem === 0 ? "active" : ""}`}><Link to="/">Home</Link></li>
-            <li onClick={() => handleNavItemClick(1)} className={`nav-item About ${activeNavItem === 1 ? "active" : ""}`}><Link to="/">About</Link></li>
-            <li onClick={() => handleNavItemClick(2)} className={`nav-item Articles ${activeNavItem === 2 ? "active" : ""}`}><Link to="/">Articles</Link></li>
-            <li onClick={() => handleNavItemClick(3)} className={`nav-item contact ${activeNavItem === 3 ? "active" : ""}`}><Link to="/">Contact Us</Link></li>
+            <li onClick={() => handleNavItemClick(1)} className={`nav-item About ${activeNavItem === 1 ? "active" : ""}`}><Link to="#">About</Link></li>
+            <li onClick={() => handleNavItemClick(2)} className={`nav-item Articles ${activeNavItem === 2 ? "active" : ""}`}><Link to="#">Articles</Link></li>
+            <li onClick={() => handleNavItemClick(3)} className={`nav-item contact ${activeNavItem === 3 ? "active" : ""}`}><Link to="#">Contact Us</Link></li>
             <li className="nav-item border"></li>
             <li className="nav-item icons facebook" ><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaFacebook /></a></li>
             <li className="nav-item icons" ><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaSquareTwitter /></a></li>
