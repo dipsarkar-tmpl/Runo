@@ -1,4 +1,5 @@
 import Card_type2 from "./Card_type2";
+import { Link } from "react-router-dom";
 import "./Cards_type2.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -60,18 +61,22 @@ export default function Cards_type2() {
   return (
     <div className="cards2-container">
       <Slider {...settings}>
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
-        <Card_type2 />
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       <Link to="/single-article"><Card_type2 /></Link>
+       
       </Slider>
     </div>
   );

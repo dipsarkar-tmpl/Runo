@@ -1,6 +1,7 @@
 .card2-container {
   width: 95%;
   height: 350px;
+  cursor: pointer;
   
   background: url("../../images/Blog\ Image.png");
   background-repeat: no-repeat;

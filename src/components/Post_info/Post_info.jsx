@@ -31,10 +31,10 @@ export default function Post_info() {
           </div>
           <div className="right-post-info">
             <div className="right-post-icons">
-              <FaFacebook />
-              <FaTwitter />
-              <FaInstagramSquare />
-              <IoLogoYoutube />
+              <a className="right-post-a" href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaFacebook /></a>
+              <a className="right-post-a" href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaTwitter /></a>
+              <a className="right-post-a" href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaInstagramSquare /></a>
+              <a className="right-post-a" href="https://www.instagram.com/dipsarkar1010/" target="_blank"><IoLogoYoutube /></a>
 
             </div>
           </div>

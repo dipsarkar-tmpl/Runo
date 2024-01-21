@@ -38,11 +38,11 @@ export default function Header() {
             <li onClick={() => handleNavItemClick(2)} className={`nav-item Articles ${activeNavItem === 2 ? "active" : ""}`}><Link to="/">Articles</Link></li>
             <li onClick={() => handleNavItemClick(3)} className={`nav-item contact ${activeNavItem === 3 ? "active" : ""}`}><Link to="/">Contact Us</Link></li>
             <li className="nav-item border"></li>
-            <li className="nav-item icons facebook" ><FaFacebook /></li>
-            <li className="nav-item icons" ><FaSquareTwitter /></li>
-            <li className="nav-item icons" ><FaYoutube /></li>
-            <li className="nav-item icons" ><FaPinterest /></li>
-            <li className="nav-item icons" ><FaInstagram /></li>
+            <li className="nav-item icons facebook" ><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaFacebook /></a></li>
+            <li className="nav-item icons" ><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaSquareTwitter /></a></li>
+            <li className="nav-item icons" ><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaYoutube /></a></li>
+            <li className="nav-item icons" ><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaPinterest /></a></li>
+            <li className="nav-item icons" ><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaInstagram /></a></li>
             <li className="nav-item border"></li>
             <li className="nav-item icons search" ><IoSearchOutline /></li>
           </ul>
