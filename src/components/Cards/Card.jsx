@@ -1,9 +1,12 @@
 import "./Card.css";
+import { Link } from "react-router-dom";
+
 
 
 export default function Card({ category, date, content, title, image }) {
   return (
-    <div className="card-container">
+    <Link to="/single-article" >
+    <div className="card-container"><div>Test from card</div>
       <div className="img-container">
         <img src={image} alt="Card" />
         <div className="cat-container">
@@ -20,5 +23,7 @@ export default function Card({ category, date, content, title, image }) {
         <p>{content}</p>
       </div>
     </div>
+    </Link>
+
   );
 }
