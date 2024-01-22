@@ -16,7 +16,7 @@ export default function Cards() {
   const getApidata = async (url) => {
     try {
       const response = await axios.get(url);
-      setMyData(response?.data?.data || []);
+      setMyData(response?.data?.data);
     } catch (error) {
       console.error(error);
     }
