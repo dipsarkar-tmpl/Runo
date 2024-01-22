@@ -6,6 +6,7 @@ import Popular_topics from "../components/Popular_topics/Popular_topics";
 import Slider_navbar from "../components/Slider_navbar/Slider_navbar";
 import Navbar from "../components/navbar/Navbar";
 import "./Home.css"
+import axios from "axios";
 
 
 export default function Home() {
@@ -14,13 +15,13 @@ export default function Home() {
   'http://139.59.24.180:3001/api/topics?sort=topic_rating:desc&pagination[pageSize]=8&populate[0]=categories&populate[1]=Topic_image&populate[2]=author&populate[3]=author.author_image';
 
   const [myData, setMyData] = useState([]);
-  console.log(myData,'myData before test commit');
+  console.log(myData,'myData home before test commit');
 
   const getApidata = async (url) => {
     try {
       const response = await axios.get(url);
       setMyData(response?.data?.data);
-  console.log(myData,'myData after test commit');
+  console.log(myData,'myData home after test commit');
 
     } catch (error) {
       console.error(error);
