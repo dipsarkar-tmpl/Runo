@@ -26,12 +26,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 25px; /* 208.333% */
+  text-wrap: nowrap;
 }
 .post-content {
   
   width: 85%;
 }
-.post-content-p {
+.post-content p {
   color: #495057;
   font-family: Lora;
   font-size: 14px;
@@ -88,7 +89,7 @@ hr {
     margin: 1.4rem;
   }
 
-  .post-content-p {
+  .post-content p {
     font-size: 12px; /* Reduce the font size */
     line-height: 20px; /* Reduce the line height */
   }
