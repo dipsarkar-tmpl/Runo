@@ -1,24 +1,24 @@
 import "./Card.css";
 
-export default function Card(props) {
+export default function Card({category,date,content,title}) {
   return (
     <>
       <div className="card-container">
         
           <div className="img-container">
             <div className="cat-container">
-              <p>{props.category}</p>
+              <p>{category}</p>
             </div>
           </div>
           <div className="date-container">
-            <p>{props.date}</p>
+            <p>{date}</p>
           </div>
           <div className="title-container">
-            <h2>{props.title}</h2>
+            <h2>{title}</h2>
           </div>
           <div className="des-container">
             <p>
-              {props.content}
+              {content}
             </p>
           </div>
         </div>

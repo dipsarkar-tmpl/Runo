@@ -1,7 +1,7 @@
 .card-container {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: auto;
+  height: 485px;
 }
 
 .card-container:hover {
