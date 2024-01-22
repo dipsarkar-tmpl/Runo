@@ -1,6 +1,7 @@
 .card-container {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
 }
 
 .card-container:hover {
@@ -43,6 +44,7 @@
   height: 15px;
   width: 59px;
   margin-top: 4%;
+  text-wrap: nowrap;
 }
 .date-container p {
   color: #6c757d;
