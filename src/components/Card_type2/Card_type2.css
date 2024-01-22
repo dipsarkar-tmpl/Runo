@@ -50,6 +50,7 @@
 .card2-date {
   height: 15px;
   width: 59px;
+  text-wrap: nowrap;
 }
 .card2-date p {
   color: #e5e5e5;
