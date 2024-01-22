@@ -12,11 +12,14 @@ const API =
 export default function Cards() {
   const [showAllCards, setShowAllCards] = useState(false);
   const [myData, setMyData] = useState([]);
+  console.log(myData,'myData before test commit');
 
   const getApidata = async (url) => {
     try {
       const response = await axios.get(url);
-      setMyData(response?.data?.data || []);
+      setMyData(response?.data?.data);
+  console.log(myData,'myData after test commit');
+
     } catch (error) {
       console.error(error);
     }
@@ -29,6 +32,7 @@ export default function Cards() {
   const toggleCardDisplay = () => {
     setShowAllCards(!showAllCards);
   };
+
 
   return (
     <div className="cards-container">
