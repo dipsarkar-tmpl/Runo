@@ -13,12 +13,10 @@ const API =
 export default function Cards() {
   const [showAllCards, setShowAllCards] = useState(false);
   const [myData, setMyData] = useState([]);
-  console.log(myData,'myData');
 
   const getApidata = async (url) => {
     try {
       const response = await axios.get(url);
-      console.log(response,'response response');
       setMyData(response?.data?.data || []);
     } catch (error) {
       console.error(error);
