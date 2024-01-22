@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Cards.css";
 import Card from "./Card";
+import imageUrl from "../../images/Blog Image.png"
 
 const API =
   'http://139.59.24.180:3001/api/topics?sort=topic_rating:desc&pagination[pageSize]=8&populate[0]=categories&populate[1]=Topic_image&populate[2]=author&populate[3]=author.author_image';
@@ -37,6 +38,7 @@ export default function Cards() {
       {myData.slice(0, showAllCards ? myData.length : 4).map((card, index) => (
         <Link to="/single-article" key={index}>
           <Card
+            image={imageUrl}
             title={card.attributes.topic_shortDesc.split("\n")[0].slice(2)}   
             category={card.attributes.categories.data[0].attributes.category_topic}
             date={card.attributes.Topic_date}
