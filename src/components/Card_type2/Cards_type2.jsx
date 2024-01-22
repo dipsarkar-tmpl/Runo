@@ -1,11 +1,89 @@
-import Card_type2 from "./Card_type2";
+// Cards_type2.jsx
+
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Cards_type2.css";
+import Card_type2 from "./Card_type2";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SamplePrevArrow } from "../arrows/amplePrevArrow";
 import { SampleNextArrow } from "../arrows/SampleNextArrow";
+
+const CardData2=[
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  {
+    title:"Richird Norton photorealistic rendering as real photos",
+    category:"Fashion",
+    date:"10-10-2003",
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+  },
+  
+]
 
 export default function Cards_type2() {
   const settings = {
@@ -18,7 +96,6 @@ export default function Cards_type2() {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    
 
     responsive: [
       {
@@ -30,7 +107,6 @@ export default function Cards_type2() {
           dots: true,
         },
       },
-
       {
         breakpoint: 800,
         settings: {
@@ -58,25 +134,20 @@ export default function Cards_type2() {
       },
     ],
   };
+
   return (
     <div className="cards2-container">
       <Slider {...settings}>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       <Link to="/single-article"><Card_type2 /></Link>
-       
+        {CardData2.map((card, index) => (
+          <Link to="/single-article" key={index}>
+            <Card_type2
+              title={card.title}
+              category={card.category}
+              date={card.date}
+              content={card.content}
+            />
+          </Link>
+        ))}
       </Slider>
     </div>
   );
