@@ -6,7 +6,7 @@ import Slider from "react-slick";
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", background: "grey" }}
+        style={{ ...style, display: "none", background: "grey" }}
         onClick={onClick}
       />
     );

@@ -3,6 +3,8 @@ import "./Slider_navbar.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { SamplePrevArrow } from "../arrows/SamplePrevArrow";
+import { SampleNextArrow } from "../arrows/SampleNextArrow";
 
 export default function Slider_navbar() {
   const settings = {
@@ -13,8 +15,8 @@ export default function Slider_navbar() {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    speed: 4000,
+    autoplaySpeed: 4000,
 
     responsive: [
       {
@@ -25,8 +27,10 @@ export default function Slider_navbar() {
           infinite: true,
           dots: true,
           autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 2000,
+          speed: 4000,
+          autoplaySpeed: 4000,
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />,
         },
       },
 
@@ -38,8 +42,8 @@ export default function Slider_navbar() {
           initialSlide: 1,
           dots: true,
           autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 2000,
+          speed: 4000,
+          autoplaySpeed: 4000,
         },
       },
       {
@@ -49,8 +53,8 @@ export default function Slider_navbar() {
           slidesToScroll: 1,
           dots: true,
           autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 2000,
+          speed: 4000,
+          autoplaySpeed: 4000,
         },
       },
     ],

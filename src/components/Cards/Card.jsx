@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Card({ category, date, content, title, image }) {
   return (
     <Link to="/single-article" >
-    <div className="card-container"><div>Test from card</div>
+    <div className="card-container">
       <div className="img-container">
         <img src={image} alt="Card" />
         <div className="cat-container">

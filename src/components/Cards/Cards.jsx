@@ -1,4 +1,4 @@
-// Cards.jsx
+
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -12,13 +12,13 @@ const API =
 export default function Cards() {
   const [showAllCards, setShowAllCards] = useState(false);
   const [myData, setMyData] = useState([]);
-  console.log(myData,'myData before test commit');
+  
 
   const getApidata = async (url) => {
     try {
       const response = await axios.get(url);
       setMyData(response?.data?.data);
-  console.log(myData,'myData after test commit');
+  
 
     } catch (error) {
       console.error(error);
@@ -36,7 +36,6 @@ export default function Cards() {
 
   return (
     <div className="cards-container">
-      <div>Test</div>
       {myData.slice(0, showAllCards ? myData.length : 4).map((card, index) => (
           <Card
           key={index}
