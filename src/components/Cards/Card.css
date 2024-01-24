@@ -1,6 +1,6 @@
 .card-container {
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.15s cubic-bezier(0.68, -0.55, 0.27, 1.55), box-shadow 0.15s ease;
   height: 485px;
   position: relative;
 }
@@ -8,7 +8,8 @@
 .card-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
-  
+  width: 330px;
+  height: 487px;
 }
 
 .img-container {
