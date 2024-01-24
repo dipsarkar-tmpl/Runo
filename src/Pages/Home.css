@@ -1,0 +1,8 @@
+.navbar-home{
+    position: relative;
+
+}
+.header-nav{
+    position: absolute;
+    z-index: 1;
+}

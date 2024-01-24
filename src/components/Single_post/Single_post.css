@@ -68,7 +68,7 @@ hr {
     text-wrap: nowrap;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .post-container {
     height: auto; /* Adjust the height to fit the content */
     max-width: 100%; /* Use the full width of the screen */
@@ -85,8 +85,7 @@ hr {
   }
 
   .post-content {
-    width: 95%; /* Use the full width of the screen */
-    margin: 1.4rem;
+    padding: 10px 16px;
   }
 
   .post-content p {

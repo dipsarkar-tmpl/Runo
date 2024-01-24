@@ -8,10 +8,11 @@
 .card-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 .img-container {
-  position: relative; /* Make img-container relative */
+  position: relative; 
   width: 100%;
   height: 280px;
 }
@@ -23,7 +24,7 @@
 }
 
 .cat-container {
-  position: absolute; /* Make cat-container absolute */
+  position: absolute; 
   right: 10px;
   top: 10px;
   display: inline-flex;
@@ -91,18 +92,3 @@
   line-height: 20px;
 }
 
-@media (max-width: 1200px) {
-  /* Adjust styles for large screens */
-}
-
-@media (max-width: 992px) {
-  /* Adjust styles for medium screens */
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 576px) {
-  /* Adjust styles for small screens */
-}

@@ -4,8 +4,13 @@ import Header from '../Header/Header';
 
 export default function Navbar() {
   return (
+    <>
+  <div className="navbar-container">
+    <div className="header">
+    <Header/>
+    </div>
+    
     <div className="nav-container">
-      <Header />
       <div className='f-blog'>
         <div className="nav-cat"><p className='nav-c'>ADVENTURE</p></div>
         <div className='nav-title'><h1 className='nav-t'>Richird Norton photorealistic rendering as real photos</h1></div>
@@ -17,5 +22,7 @@ export default function Navbar() {
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 }

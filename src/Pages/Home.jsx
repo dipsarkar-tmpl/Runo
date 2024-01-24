@@ -7,6 +7,7 @@ import Slider_navbar from "../components/Slider_navbar/Slider_navbar";
 import Navbar from "../components/navbar/Navbar";
 import "./Home.css"
 import axios from "axios";
+import Header from "../components/Header/Header";
 
 
 export default function Home() {
@@ -33,7 +34,10 @@ export default function Home() {
   }, []);
   return (
     <>
-    <Slider_navbar/>
+    <div className="Navbar-home"> 
+     <div className="header-nav"><Header/></div>
+     <div className="slider-nav"><Slider_navbar/></div>
+    </div>
     <Popular_topics/>
     <Most_viewed/>
     <Editor_pick/>

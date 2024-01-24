@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
 }
+.navbar-container{
+  position: relative;
+}
+.header{
+  
+  position: fixed;
+  
+  z-index: 1;
+}
 
 .nav-container {
   position: relative;

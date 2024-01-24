@@ -132,7 +132,7 @@ line-height: normal;
   .nav-items.open {
     display: flex;
     margin-right: 0px;
-
+   text-wrap: nowrap;
 
   }
 
@@ -148,9 +148,7 @@ line-height: normal;
     flex-grow: 1; /* Allow the logo text to take up all available space */
   }
 
-  .right {
-    /* Move the menu icons to the right */
-  }
+  
 }
 .nav-item {
   transition: transform 0.3s ease; /* Add a smooth transition effect for the transform property */

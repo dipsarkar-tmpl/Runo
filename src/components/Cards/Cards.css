@@ -1,64 +1,72 @@
 .cards-container {
-    gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    
-    
-  }
-  @media (max-width: 768px) {
-    /* Styles for small screens */
-    .cards-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    button{
-      display: block;
-      margin: 0 auto;
-    }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
-    /* Styles for medium screens */
-    .cards-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    /* Styles for screens with width 480px */
-    .cards-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    button{
-      display: block;
-      margin: 0 auto;
-    }
-  }
- 
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-  
-  button {
-    display: block;
-    cursor: pointer;
-    
-  }
-  .btn-load-less{
-    height: 30px;
-    width: 80px;
-    background-color: rgb(115, 106, 106);
-    color: rgb(248, 252, 250);
-    border-radius: 10%;
-    
-  }
-  .btn-load-more{
-     height: 30px;
-    width: 80px;
-    background-color: rgb(115, 106, 106);
-    color: rgb(248, 252, 250);
-    border-radius: 10%;
-    
+@media (max-width: 768px) {
+  /* Styles for small screens */
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
   }
   .btn-container {
     display: flex;
-    
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
     margin-top: 20px; /* Adjust the margin as needed */
   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for medium screens */
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for screens with width 480px */
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+.btn-load-less {
+  height: 30px;
+  width: 80px;
+  background-color: rgb(115, 106, 106);
+  color: rgb(248, 252, 250);
+  border-radius: 10%;
+}
+
+.btn-load-more {
+  height: 30px;
+  width: 80px;
+  background-color: rgb(115, 106, 106);
+  color: rgb(248, 252, 250);
+  border-radius: 10%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+  margin-top: 20px; /* Adjust the margin as needed */
+}
