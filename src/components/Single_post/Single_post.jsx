@@ -35,9 +35,9 @@ export default function Single_post() {
     <>
       <div className="post-container">
         <div className="post-date">
-          <span className="date-span">{myData.Topic_date}</span>
+          <span className="date-span">10-01-1824</span>
           <hr />
-          <span className="time-span">{myData.topic_readtime}</span>
+          <span className="time-span">4 minutes</span>
         </div>
         <div className="post-content">
           <p>
