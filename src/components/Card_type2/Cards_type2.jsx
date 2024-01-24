@@ -9,78 +9,93 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SamplePrevArrow } from "../arrows/SamplePrevArrow";
 import { SampleNextArrow } from "../arrows/SampleNextArrow";
+import cardImg from "../../images/Blog Image.png";
+import cardImg2 from "../../images/cardImg2.jpg";
+import cardImg3 from "../../images/cardImg3.jpg";
 
 const CardData2=[
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg2
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg3
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg2
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg3
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg2
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg3
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg
   },  {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg2
   },
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
     date:"10-10-2003",
-    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data."
+    content:" Progressively incentivize cooperative systems through technically sound functionalities.The credibly productivate seamless data.",
+    img:cardImg3
   },
   
 ]
@@ -147,6 +162,7 @@ export default function Cards_type2() {
               category={card.category}
               date={card.date}
               content={card.content}
+              image={card.img}
             />
           </Link>
         ))}
