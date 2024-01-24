@@ -13,15 +13,24 @@ import p6 from "../../images/p6.jpg";
 import p7 from "../../images/p7.jpg";
 import p8 from "../../images/p8.jpg";
 const imgData = [
-  { img: p1 },
-  { img: p2 },
-  { img: p3 },
-  { img: p4 },
-  { img: p5 },
-  { img: p6 },
-  { img: p7 },
-  { img: p8 },
+  { img: p1,
+    title: "Dream destinations to visit this year in Paris" },
+  { img: p2,
+    title: "Breathtaking first-person photos around Europe" },
+  { img: p3,
+    title: "What collectors need to know about authenticity" },
+  { img: p4,
+    title: "Instagram artists with great photography skills" },
+  { img: p5,
+    title: "Dream destinations to visit this year in Paris" },
+  { img: p6,
+    title: "Breathtaking first-person photos around Europe" },
+  { img: p7,
+    title: "What collectors need to know about authenticity" },
+  { img: p8,
+    title: "Instagram artists with great photography skills" },
 ];
+
 
 //const API =
 //'http://139.59.24.180:3001/api/topics?sort=topic_rating:desc&pagination[pageSize]=8&populate[0]=categories&populate[1]=Topic_image&populate[2]=author&populate[3]=author.author_image';
@@ -42,7 +51,7 @@ export default function Cards() {
             <Card
               key={index}
               image={imgData[index].img}
-              title={card.attributes.topic_shortDesc.split("\n")[0].slice(2)}
+              title={imgData[index].title}
               category={
                 card.attributes.categories.data[0].attributes.category_topic
               }

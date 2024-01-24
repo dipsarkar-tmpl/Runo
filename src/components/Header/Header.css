@@ -20,7 +20,8 @@
 .navbar {
   display: flex;
   background: rgba(0, 0, 0, 0.20); /* Dark background color */
-  width: 100dvw;
+  
+  
   height: 80px;
   align-items: center;
   justify-content: space-between;
