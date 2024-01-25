@@ -134,7 +134,11 @@ line-height: normal;
     display: flex;
     margin-right: 0px;
    text-wrap: nowrap;
+   width: 135px;
 
+  }
+  .nav-item contact{
+    text-wrap: nowrap;
   }
 
   
