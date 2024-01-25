@@ -136,7 +136,7 @@ a {
       width: 45%;
     }
     .upper-container{
-        width: 85%;
+        width: 90%;
     }
   
     .upper-container-item {
@@ -150,4 +150,9 @@ a {
       margin-right: 18px;
     }
   }
-  
+  @media(max-width:480px){
+    .left-lower{
+      margin-left: 4px;
+      text-wrap: nowrap;
+    }
+  }
