@@ -77,6 +77,7 @@ line-height: normal;
   margin-right: 20px;
   cursor: pointer;
   text-wrap: nowrap;
+  white-space: nowrap ;
   
   
 }
@@ -90,6 +91,7 @@ line-height: normal;
   height: 0.875rem;
   width: 6rem;
   text-wrap: nowrap;
+  white-space: nowrap ;
   margin-top: 2.06rem;
   margin-bottom: 2.06rem;
 }
@@ -129,11 +131,13 @@ line-height: normal;
   }
 .contact{
   width: 66px;
+  white-space: nowrap;
 }
   .nav-items.open {
     display: flex;
     margin-right: 0px;
    text-wrap: nowrap;
+   white-space: nowrap;
    width: 160px;
    height: 200px;
 

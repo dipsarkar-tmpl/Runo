@@ -1,8 +1,20 @@
 .cards2-container{
-    width: 90%;
     height: auto;
     display: grid;
     gap: 1rem;
-    margin: auto;
+    margin-inline: 50px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+@media only screen and (max-width: 768px) {
+    .cards2-container {
+    margin: auto;
+    margin-inline: 23px;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+    .cards2-container {
+    margin: auto;
+    }
+  }
+ 

@@ -1,9 +1,9 @@
 .card2-container {
   position: relative;
-  width: 95%;
+  width: 90%;
   height: 350px;
   cursor: pointer;
-  margin-right: 20px;
+  margin: 0 auto;
 }
 
 .main-content {
@@ -89,7 +89,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;  
-  overflow: hidden
+  overflow: hidden;
 }
 
 .card2-image {
