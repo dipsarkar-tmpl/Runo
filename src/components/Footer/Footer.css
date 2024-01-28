@@ -155,4 +155,7 @@ a {
       margin-left: 4px;
       text-wrap: nowrap;
     }
+    .upper-footer{
+      padding-block: 15px;
+    }
   }
