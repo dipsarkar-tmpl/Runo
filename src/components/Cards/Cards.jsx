@@ -40,7 +40,7 @@ export default function Cards() {
 
   const getApidata = async (url) => {
     try {
-      const response = await axios.get(url);
+      const response = await axios.interceptors.get(url);
       setMyData(response?.data?.data);
 
     } catch (error) {
