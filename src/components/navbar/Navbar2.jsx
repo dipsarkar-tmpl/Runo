@@ -1,25 +1,27 @@
+// Navbar2.jsx
 import React from "react";
 import "./Navbar2.css";
 
-export default function Navbar2() {
+
+export default function Navbar2({title,category,date,short,image}) {
   return (
     <div>
       <div className="nav-container">
+        <img src={image} alt="Navigation" className="nav-image" />
         <div className="f-blog">
           <div className="nav-cat">
-            <p className="nav-c">ADVENTURE</p>
+            <p className="nav-c">{category}</p>
           </div>
           <div className="nav-title">
             <h1 className="nav-t">
-              Richird Norton photorealistic rendering as real photos
+            {title}
             </h1>
           </div>
           <div className="nav-info">
-            <span className="nav-date">10-10-2003</span>
+            <span className="nav-date">{date}</span>
             <hr className="nav-hr" />
             <span className="nav-d">
-              Progressively incentivize cooperative systems through technically
-              sound functionalities. The credibly productivate seamless data.
+             {short}
             </span>
           </div>
         </div>

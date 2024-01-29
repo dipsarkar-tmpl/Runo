@@ -6,12 +6,39 @@ import "slick-carousel/slick/slick-theme.css";
 import { SamplePrevArrow } from "../arrows/SamplePrevArrow";
 import { SampleNextArrow } from "../arrows/SampleNextArrow";
 import Navbar2 from "../navbar/Navbar2";
+import bannerImg from "../../images/nav.png"; 
+const bannerData = [
+  {
+    title: "Richird Norton photorealistic rendering as real photos",
+    img: bannerImg,
+    date: "10-10-2003",
+    short:
+      "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
+    category: "ADVENTURE",
+  },
+  {
+    title: "Richird Norton photorealistic rendering as real photos",
+    img: bannerImg,
+    date: "10-10-2003",
+    short:
+      "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
+    category: "ADVENTURE",
+  },
+  {
+    title: "Richird Norton photorealistic rendering as real photos",
+    img: bannerImg,
+    date: "10-10-2003",
+    short:
+      "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
+    category: "ADVENTURE",
+  },
+];
 
 export default function Slider_navbar() {
   const settings = {
     dots: true,
     infinite: true,
-    
+
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -63,10 +90,16 @@ export default function Slider_navbar() {
   return (
     <div className="slider">
       <Slider {...settings}>
-        
-        <Navbar2 />
-        <Navbar2 />
-        <Navbar2 />
+        {bannerData.map((banner, index) => (
+          <Navbar2
+            key={index}
+            image={banner.img}
+            title={banner.title}
+            date={banner.date}
+            short={banner.short}
+            category={banner.category}
+          />
+        ))}
       </Slider>
     </div>
   );
