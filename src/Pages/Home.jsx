@@ -13,7 +13,7 @@ import Header from "../components/Header/Header";
 export default function Home() {
 
   const API =
-  'http://139.59.24.180:3001/api/topics?sort=topic_rating:desc&pagination[pageSize]=8&populate[0]=categories&populate[1]=Topic_image&populate[2]=author&populate[3]=author.author_image';
+  'https://139.59.24.180:3001/api/topics?sort=topic_rating:desc&pagination[pageSize]=8&populate[0]=categories&populate[1]=Topic_image&populate[2]=author&populate[3]=author.author_image';
 
   const [myData, setMyData] = useState([]);
 
