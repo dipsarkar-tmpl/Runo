@@ -6,7 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { SamplePrevArrow } from "../arrows/SamplePrevArrow";
 import { SampleNextArrow } from "../arrows/SampleNextArrow";
 import Navbar2 from "../navbar/Navbar2";
-import bannerImg from "../../images/nav.png"; 
+import bannerImg from "../../images/nav.png";
+import bannerImg22 from "../../images/banner2.jpg";
+import bannerImg33 from "../../images/banner3.png";
 const bannerData = [
   {
     title: "Richird Norton photorealistic rendering as real photos",
@@ -18,16 +20,16 @@ const bannerData = [
   },
   {
     title: "Richird Norton photorealistic rendering as real photos",
-    img: bannerImg,
-    date: "10-10-2003",
+    img: bannerImg22,
+    date: "12-10-2003",
     short:
       "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
     category: "ADVENTURE",
   },
   {
     title: "Richird Norton photorealistic rendering as real photos",
-    img: bannerImg,
-    date: "10-10-2003",
+    img: bannerImg33,
+    date: "11-10-2003",
     short:
       "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
     category: "ADVENTURE",
