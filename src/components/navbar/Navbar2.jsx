@@ -3,6 +3,7 @@ import React from "react";
 import "./Navbar2.css";
 
 
+
 export default function Navbar2({title,category,date,short,image}) {
   return (
     <div>

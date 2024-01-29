@@ -1,4 +1,4 @@
-import Navbar from "../navbar/Navbar";
+
 import "./Slider_navbar.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -23,7 +23,7 @@ const bannerData = [
     img: bannerImg22,
     date: "12-10-2003",
     short:
-      "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
+    "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
     category: "ADVENTURE",
   },
   {
@@ -31,7 +31,7 @@ const bannerData = [
     img: bannerImg33,
     date: "11-10-2003",
     short:
-      "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
+    "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data.",
     category: "ADVENTURE",
   },
 ];
