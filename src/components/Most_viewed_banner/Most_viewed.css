@@ -1,136 +1,144 @@
-*{
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .most_viewed-container {
-    height: 37.5rem;
-    width: 100%;
-    flex-shrink: 0;
-    background: url("../../images/most_viewed.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 95px;
+  height: 37.5rem;
+  width: 100%;
+  flex-shrink: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 95px;
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .content {
-    
-    width: 40%;
-    margin:  auto;
+  width: 40%;
+  margin: auto;
 }
 
 .category {
-    display: flex;
-    padding: 5px 10px;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.15);
-    width: 4%;
-    margin-bottom: 1rem;
+  display: flex;
+  padding: 5px 10px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  width: 4%;
+  margin-bottom: 1rem;
 }
-.date{
-    height: 0.9375rem;
-    width: 3.6875rem;
-    margin: 0 auto;
-    margin-top: 30px;
-    
+
+.date {
+  height: 0.9375rem;
+  width: 3.6875rem;
+  margin: 0 auto;
+  margin-top: 30px;
 }
+
 .cat-content {
-    color: #FFF;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 12px;
-    width: 42px;
-    align-items: center;
-    justify-content: center;
-    
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 12px;
+  width: 42px;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-content {
-    color: #FFF;
-    text-align: center;
-    font-family: Lora;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: #FFF;
+  text-align: center;
+  font-family: Lora;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.des{
-    margin: 0 auto;
-    margin-top: 20px;
+
+.des {
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .des-content {
-    color: #E5E5E5;
-
-    text-align: center;
-    font-family: Lora;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    
+  color: #E5E5E5;
+  text-align: center;
+  font-family: Lora;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .date-content {
-    color: #E5E5E5;
-    font-family: Lora;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
+  color: #E5E5E5;
+  font-family: Lora;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.most-viewed-hr{
-    height: 0;
-    width: 30px;
-    margin: 0 auto;
-    margin-top: 20px;
-} 
+
+.most-viewed-hr {
+  height: 0;
+  width: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 /* Add a media query for screens smaller than 768px */
 @media (max-width: 768px) {
-    .most_viewed-container {
-      height: auto;
-      margin-top: 2%;
-    }
-  
-    .content {
-      width: 80%;
-      padding: 20px;
-    }
-  
-    .category {
-      width: 10%;
-    }
-    
-    .date {
-      margin-top: 10px;
-    }
-    
-    .title-content {
-      font-size: 24px;
-    }
-    
-    .des-content {
-      font-size: 10px;
-    }
-    
-    .date-content {
-      font-size: 10px;
-    }
-    
-    .most-viewed-hr {
-      margin-top: 10px;
-    }
+  .most_viewed-container {
+    height: auto;
+    margin-top: 2%;
   }
+
+  .content {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .category {
+    width: 10%;
+  }
+
+  .date {
+    margin-top: 10px;
+  }
+
+  .title-content {
+    font-size: 24px;
+  }
+
+  .des-content {
+    font-size: 10px;
+  }
+
+  .date-content {
+    font-size: 10px;
+  }
+
+  .most-viewed-hr {
+    margin-top: 10px;
+  }
+}
