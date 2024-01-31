@@ -14,9 +14,11 @@ export default function Card({ category1,category2,category3, date, content, tit
           <div className="cat-container1">
             <p>{category2}</p> 
           </div>
+          { category3 &&
           <div className="cat-container2">
             <p>{category3}</p> 
           </div>
+          }
           </div>
         </div>
         <div className="card-content-popular">

@@ -24,10 +24,7 @@
   height: 100%;
   object-fit: cover;
 }
-.both-cat-container{
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .cat-container {
   position: absolute; 
@@ -148,6 +145,14 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden
+}
+@media(max-width:1024px){
+  .cat-container1{
+    left: 140px;
+  }
+  .cat-container2{
+    left: 65px;
+  }
 }
 @media(max-width:320px){
   .cat-container1{
