@@ -169,15 +169,17 @@ export default function Cards_type2() {
     <div className="cards2-container">
       <Slider {...settings}>
         {cardData.map((card2, index) => (
-          <Link to="/single-article" key={index}>
+          
             <Card_type2
+              id = {card2.id}
+              key={index}
               title={card2.title}
               category={card2.categories[0].title.toUpperCase()}
               date={card2.updatedAt.split("T")[0]}
               content={card2.description}
               image={card2.headerimage}
             />
-          </Link>
+          
         ))}
       </Slider>
     </div>

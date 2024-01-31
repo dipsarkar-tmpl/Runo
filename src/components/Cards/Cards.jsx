@@ -41,14 +41,14 @@ export default function Cards({ selectedCategory }) {
           .slice(0, showAllCards ? filteredData.length : 4)
           .map((card, index) => (
             <Card
+              id={card.id}
               key={index}
               image={card.headerimage}
               title={card.title}
               category1={card.categories[0].title.toUpperCase()}
               category2={card.categories[1].title.toUpperCase()}
               category3={
-                // Conditionally render the third category if it exists
-                card.categories[2] ? card.categories[2].title.toUpperCase() : null
+              card.categories[2] ? card.categories[2].title.toUpperCase() : null
               }
               date={card.date}
               content={card.description}

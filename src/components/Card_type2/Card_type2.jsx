@@ -1,8 +1,9 @@
 import "./Card_type2.css";
-import img from "../../images/Blog Image.png"
+import { Link } from "react-router-dom";
 
-export default function Card_type2({category,date,title,content,image}) {
+export default function Card_type2({category,date,title,content,image,id}) {
   return (
+    <Link to={`/single-article/${id}`} >
     <div className="card2-container">
       <div className="card2-cat">
           <p>{category}</p>
@@ -25,5 +26,6 @@ export default function Card_type2({category,date,title,content,image}) {
         className="card2-image"
       />
     </div>
+    </Link>
   );
 }
