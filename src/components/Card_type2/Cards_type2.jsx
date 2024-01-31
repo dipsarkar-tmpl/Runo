@@ -1,6 +1,6 @@
 // Cards_type2.jsx
 
-import React from "react";
+
 import { Link } from "react-router-dom";
 import "./Cards_type2.css";
 import Card_type2 from "./Card_type2";
@@ -9,11 +9,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { SamplePrevArrow } from "../arrows/SamplePrevArrow";
 import { SampleNextArrow } from "../arrows/SampleNextArrow";
-import cardImg from "../../images/Blog Image.png";
-import cardImg2 from "../../images/cardImg2.jpg";
-import cardImg3 from "../../images/cardImg3.jpg";
-
-const CardData2=[
+import React, { useState,useEffect } from "react";
+import axios from "axios";
+/*const CardData2=[
   {
     title:"Richird Norton photorealistic rendering as real photos",
     category:"Fashion",
@@ -98,7 +96,8 @@ const CardData2=[
     img:cardImg3
   },
   
-]
+]*/
+const API = 'https://runo1.onrender.com/topic';
 
 export default function Cards_type2() {
   const settings = {
@@ -151,18 +150,32 @@ export default function Cards_type2() {
       },
     ],
   };
+  const [cardData, setcardData] = useState([]);
+  const getApidata = async (url) => {
+    try {
+      const response = await axios.get(url);
+      setcardData(response.data);
+      console.log(cardData);
+
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  useEffect(() => {
+    getApidata(API);
+  }, []);
 
   return (
     <div className="cards2-container">
       <Slider {...settings}>
-        {CardData2.map((card, index) => (
+        {cardData.map((card2, index) => (
           <Link to="/single-article" key={index}>
             <Card_type2
-              title={card.title}
-              category={card.category}
-              date={card.date}
-              content={card.content}
-              image={card.img}
+              title={card2.title}
+              category={card2.categories[0].title.toUpperCase()}
+              date={card2.updatedAt.split("T")[0]}
+              content={card2.description}
+              image={card2.headerimage}
             />
           </Link>
         ))}
