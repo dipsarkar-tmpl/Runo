@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import "./Single_Banner.css";
 
 
+
 export default function Single_Banner({title,auth_name,info,category,image}) {
   return (
     <>

@@ -8,21 +8,26 @@ import "./SingleArticle.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import loaderImg from "../../src/images/Spinner-1s-200px.svg"
 
 export default function SingleArticle() {
   const { id } = useParams();
   const [bannerData, setbannerData] = useState({});
+  const[loader,setLoader]=useState(false);
 
   useEffect(() => {
     const getApidata = async () => {
 
       try {
+        setLoader(true);
         const API = `https://runo1.onrender.com/topic/${id}`;
         const response = await axios.get(API);
         setbannerData(response.data);
         console.log(response.data);
       } catch (error) {
         console.error(error);
+      } finally{
+        setLoader(false);
       }
     };
 
@@ -32,6 +37,11 @@ export default function SingleArticle() {
   
   return (
     <>
+    {loader &&
+     <div className="gif_img">
+          <img className="loader-image" src={loaderImg} alt="Loader" />
+        </div>
+       }
       {bannerData?.headerimage ? (
           <Single_Banner
             image={bannerData?.headerimage}
