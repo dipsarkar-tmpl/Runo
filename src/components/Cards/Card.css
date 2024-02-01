@@ -4,6 +4,16 @@
   height: 485px;
   position: relative;
 }
+.categories-container{
+  display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 14rem;
+    width: 100%;
+    column-gap: 0.5rem;
+}
 
 
 .card-container:hover {
@@ -26,10 +36,10 @@
 }
 
 
+
 .cat-container {
-  position: absolute; 
-  right: 10px;
-  top: 10px;
+  
+  
   display: inline-flex;
   padding: 6px 10px;
   justify-content: center;
@@ -39,9 +49,9 @@
   background: rgba(255, 255, 255, 0.2);
 }
 .cat-container1 {
-  position: absolute; 
+ 
   
-  top: 10px;
+ 
   display: inline-flex;
   padding: 6px 10px;
   justify-content: center;
@@ -49,7 +59,7 @@
   gap: 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
-  left: 170px;
+  left: 162px;
 }
 .cat-container p {
   color: #fff;
@@ -70,9 +80,7 @@
   line-height: normal;
 }
 .cat-container2 {
-  position: absolute; 
   
-  top: 10px;
   display: inline-flex;
   padding: 6px 10px;
   justify-content: center;
@@ -80,7 +88,7 @@
   gap: 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
-  left: 95px;
+  
 }
 .cat-container2 p {
   color: #fff;
