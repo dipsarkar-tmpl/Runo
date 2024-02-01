@@ -46,10 +46,10 @@ export default function SingleArticle() {
     {bannerData?.headerimage ? (
       <Post_info auth_name={bannerData?.authors[0]?.name}
                  auth_img={bannerData?.authors[0]?.photo}
-                 auth_pro={bannerData.authors[0]?.author_categories[0]?.title.toUpperCase()}
-                 cat1={bannerData.categories[0].title.toUpperCase()}
-                 cat2={bannerData.categories[1].title.toUpperCase()}
-                 cat3={bannerData.categories[1].title.toUpperCase()}
+                 auth_pro={bannerData?.authors[0]?.author_categories[0]?.title.toUpperCase()}
+                 cat1={bannerData?.categories[0]?.title.toUpperCase()}
+                 cat2={bannerData?.categories[1]?.title.toUpperCase()}
+                 cat3={bannerData?.categories[1]?.title.toUpperCase()}
        />
        ) : null}
       <Related />

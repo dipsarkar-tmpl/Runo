@@ -1,70 +1,65 @@
 /* Header.css */
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
-.border{
+
+.border {
   border-left: 1px solid white;
   height: 1.25rem;
 }
-.icons{
+
+.icons {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
-.icons > svg{
+
+.icons > svg {
   height: 90%;
   width: 90%;
 }
 
 .navbar {
   display: flex;
-  background: rgba(0, 0, 0, 0.20); /* Dark background color */
-  
-  
+  background: rgba(0, 0, 0, 0.20);
   height: 80px;
   align-items: center;
   justify-content: space-between;
-  
-  
 }
+
 .left {
   width: 4.312rem;
   height: 1.375rem;
   margin-left: 4.38rem;
 }
 
-.left h2{
- 
-  
-
+.left h2 {
   color: #F8F9FA;
-font-family: Spartan;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Spartan;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .right {
   display: flex;
-  
   align-items: center;
- 
 }
 
 .menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
-  margin-right: 20px; /* Move the cross icon to the right */
+  margin-right: 20px;
 }
 
 .nav-items {
   list-style: none;
   display: flex;
-  justify-content: center;/* Align items to the right */
-   /* Add margin to separate from the close icon */
+  justify-content: center;
   align-items: center;
   margin-right: 4.38rem;
 }
@@ -77,9 +72,7 @@ line-height: normal;
   margin-right: 20px;
   cursor: pointer;
   text-wrap: nowrap;
-  white-space: nowrap ;
-  
-  
+  white-space: nowrap;
 }
 
 .nav-item a {
@@ -87,87 +80,130 @@ line-height: normal;
   color: white;
   font-weight: 600;
 }
-.contact{
+
+.contact {
   height: 0.875rem;
   width: 6rem;
   text-wrap: nowrap;
-  white-space: nowrap ;
+  white-space: nowrap;
   margin-top: 2.06rem;
   margin-bottom: 2.06rem;
 }
-
-
 
 .nav-item.active {
   border-bottom: 2px solid #D4A373;
 }
 
-
 @media only screen and (max-width: 768px) {
   .menu-icon {
     display: flex;
-     /* Move the menu icon to the right */
     float: right;
   }
-  .navbar.open{
-    justify-content:space-between;
+
+  .navbar.open {
+    justify-content: space-between;
   }
-  .icons{
+
+  .icons {
     display: none;
   }
-  .border{
+
+  .border {
     display: none;
   }
+
   .nav-items {
     display: none;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
-    
+    align-items: flex-end;
     position: absolute;
-    background: rgba(0, 0, 0, 42%); /* Dark background color */
+    background: rgba(0, 0, 0, 42%);
     top: 80px;
-    right: 0; /* Align to the right */
+    right: 0;
     z-index: 1;
   }
-.contact{
-  width: 66px;
-  white-space: nowrap;
-}
+
+  .contact {
+    width: 66px;
+    white-space: nowrap;
+  }
+
   .nav-items.open {
     display: flex;
     margin-right: 0px;
-   text-wrap: nowrap;
-   white-space: nowrap;
-   width: 160px;
-   height: 200px;
-
+    text-wrap: nowrap;
+    white-space: nowrap;
+    width: 160px;
+    height: 200px;
   }
-  .nav-item contact{
+
+  .nav-item contact {
     text-wrap: nowrap;
   }
-
-  
 
   .nav-item {
     margin: 10px 20px;
   }
 
   .left {
-    margin-left: 1.5rem; /* Remove the left margin */
-     /* Move the logo text to the left */
-    flex-grow: 1; /* Allow the logo text to take up all available space */
+    margin-left: 1.5rem;
+    flex-grow: 1;
   }
-
-  
 }
+
 .nav-item {
-  transition: transform 0.3s ease; /* Add a smooth transition effect for the transform property */
+  transition: transform 0.3s ease;
 }
 
 .nav-item:hover {
-  transform: scale(1.1); /* Apply a slight scale transformation on hover */
+  transform: scale(1.1);
 }
 
 .nav-item a:hover {
-  color: #fff; /* Change the text color on hover */
+  color: #fff;
+}
+
+/* New styles for the search container and textarea */
+
+.search-container {
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  padding: 10px;
+  background: white;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 40%;
+}
+.search-results{
+  overflow-y: scroll;
+  max-height: 13rem;
+  margin-left: 63px;
+}
+
+
+.search-container-input{
+  position: absolute;
+  top: 10px;
+}
+.search-container p{
+  position: absolute;
+  top: 10px;
+  font-size: small;
+  right: 200px;
+}
+.result{
+  height: 100%;
+  width:100%;
+  
+}
+.search-results li{
+  list-style: none;
+}
+.search-results h3{
+  color: black;
 }
