@@ -108,8 +108,8 @@ export default function Cards_type2() {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 4000,
+    speed: 5000,
+    autoplaySpeed: 5000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
 

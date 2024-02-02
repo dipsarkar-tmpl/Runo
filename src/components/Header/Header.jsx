@@ -13,7 +13,7 @@ import { Link, useParams } from "react-router-dom";
 import { Params } from "react-router-dom";
 
 export default function Header() {
-  const{id}= useParams();
+  const { id } = useParams();
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeNavItem, setActiveNavItem] = useState(0);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -38,9 +38,10 @@ export default function Header() {
 
   useEffect(() => {
     if (searchKeyword !== "") {
-      axios.get(`https://runo1.onrender.com/${searchKeyword}`)
+      axios
+        .get(`https://runo1.onrender.com/${searchKeyword}`)
         .then((response) => {
-          console.log(response, response.data, "here")
+          console.log(response, response.data, "here");
           setSearchResults(response.data);
         })
         .catch((error) => {
@@ -51,58 +52,136 @@ export default function Header() {
     }
   }, [searchKeyword]);
 
-  console.log(searchKeyword)
+  console.log(searchKeyword);
 
   return (
     <>
       <nav className={`navbar ${menuOpen ? "open" : ""}`}>
         <div className="left">
-          <h2><a href="/">RUNO</a></h2>
+          <h2>
+            <a href="/">RUNO</a>
+          </h2>
         </div>
         <div className="right">
           <div className="menu-icon" onClick={toggleMenu}>
-            {menuOpen ? <FaTimes style={{ color: "white" }} /> : <FaBars style={{ color: "white" }} />}
+            {menuOpen ? (
+              <FaTimes style={{ color: "white" }} />
+            ) : (
+              <FaBars style={{ color: "white" }} />
+            )}
           </div>
           <ul className={`nav-items ${menuOpen ? "open" : ""}`}>
-            <li onClick={() => handleNavItemClick(0)} className={`nav-item Home ${activeNavItem === 0 ? "active" : ""}`}><Link to="/">Home</Link></li>
-            <li onClick={() => handleNavItemClick(1)} className={`nav-item About ${activeNavItem === 1 ? "active" : ""}`}><Link to="#">About</Link></li>
-            <li onClick={() => handleNavItemClick(2)} className={`nav-item Articles ${activeNavItem === 2 ? "active" : ""}`}><Link to="#">Articles</Link></li>
-            <li onClick={() => handleNavItemClick(3)} className={`nav-item contact ${activeNavItem === 3 ? "active" : ""}`}><Link to="#">Contact Us</Link></li>
+            <li
+              onClick={() => handleNavItemClick(0)}
+              className={`nav-item Home ${activeNavItem === 0 ? "active" : ""}`}
+            >
+              <Link to="/">Home</Link>
+            </li>
+            <li
+              onClick={() => handleNavItemClick(1)}
+              className={`nav-item About ${
+                activeNavItem === 1 ? "active" : ""
+              }`}
+            >
+              <Link to="#">About</Link>
+            </li>
+            <li
+              onClick={() => handleNavItemClick(2)}
+              className={`nav-item Articles ${
+                activeNavItem === 2 ? "active" : ""
+              }`}
+            >
+              <Link to="#">Articles</Link>
+            </li>
+            <li
+              onClick={() => handleNavItemClick(3)}
+              className={`nav-item contact ${
+                activeNavItem === 3 ? "active" : ""
+              }`}
+            >
+              <Link to="#">Contact Us</Link>
+            </li>
             <li className="nav-item border"></li>
-            <li className="nav-item icons facebook"><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaFacebook /></a></li>
-            <li className="nav-item icons"><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaSquareTwitter /></a></li>
-            <li className="nav-item icons"><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaYoutube /></a></li>
-            <li className="nav-item icons"><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaPinterest /></a></li>
-            <li className="nav-item icons"><a href="https://www.instagram.com/dipsarkar1010/" target="_blank"><FaInstagram /></a></li>
+            <li className="nav-item icons facebook">
+              <a
+                href="https://www.instagram.com/dipsarkar1010/"
+                target="_blank"
+              >
+                <FaFacebook />
+              </a>
+            </li>
+            <li className="nav-item icons">
+              <a
+                href="https://www.instagram.com/dipsarkar1010/"
+                target="_blank"
+              >
+                <FaSquareTwitter />
+              </a>
+            </li>
+            <li className="nav-item icons">
+              <a
+                href="https://www.instagram.com/dipsarkar1010/"
+                target="_blank"
+              >
+                <FaYoutube />
+              </a>
+            </li>
+            <li className="nav-item icons">
+              <a
+                href="https://www.instagram.com/dipsarkar1010/"
+                target="_blank"
+              >
+                <FaPinterest />
+              </a>
+            </li>
+            <li className="nav-item icons">
+              <a
+                href="https://www.instagram.com/dipsarkar1010/"
+                target="_blank"
+              >
+                <FaInstagram />
+              </a>
+            </li>
             <li className="nav-item border"></li>
-            <li className="nav-item icons search" onClick={toggleSearch}><IoSearchOutline /></li>
+            <li className="nav-item icons search" onClick={toggleSearch}>
+              <IoSearchOutline />
+            </li>
           </ul>
         </div>
       </nav>
-
+      
+     
       {searchOpen && (
-        <div className="search-container">
-          <input
-          className="search-container-input"
-            placeholder="Search content..."
-            value={searchKeyword}
-            onChange={handleSearchInputChange}
-          />
-          {searchResults.length > 0 ?<div className="result"> (
-            <ul className="search-results">
-              {searchResults.map((result) => (
-                <li key={result?.id}>
-                  <Link to={`/single-article/${result?.id}`}>
-                    <h3>{result.title}</h3>
-                  </Link>
-                  <p>{result.body}</p>
-                </li>
-              ))}
-            </ul>
-          )</div> : (
-            <p>No results found.</p>
-          )}
-        </div>
+         
+        <div className={`search-container ${menuOpen ? "open" : "close"}`}>
+          
+            <input
+              className="search-container-input"
+              placeholder="Search content..."
+              value={searchKeyword}
+              onChange={handleSearchInputChange}
+            />
+            {searchResults.length > 0 ?
+              <div className="result">
+                <ul className="search-results">
+                  {searchResults.map((result) => (
+                    <li key={result?.id}>
+                      <Link to={`/single-article/${result?.id}`}>
+                        <h3>{result.title}</h3>
+                      </Link>
+                      <p>{result.body}</p>
+                    </li>
+                  ))}
+                </ul>
+                
+              </div>:
+              
+              <p>No results found.</p>
+                  }
+             
+            
+          </div>
+        
       )}
     </>
   );

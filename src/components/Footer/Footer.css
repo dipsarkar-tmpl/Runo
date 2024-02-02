@@ -155,12 +155,18 @@ a {
       margin-left: 4px;
       text-wrap: nowrap;
     }
+    .upper-container-item4{
+      margin-top: 20px ;
+    }
     .upper-footer{
       padding-block: 15px;
     }
   }
-  @media(max-width:320px){
+  @media(max-width:321px){
     .left-lower p,.right-lower p{
-      font-size: 12px;
+      font-size: 10px;
+    }
+    .upper-container-item4{
+      margin-top: 13px;
     }
   }
