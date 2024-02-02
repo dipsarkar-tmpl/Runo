@@ -6,7 +6,7 @@ export function SampleNextArrow(props) {
     return (
       <div
         className={className}
-        style={{ ...style, display: "none", background: "grey" }}
+        style={{ ...style, background: "grey" }}
         onClick={onClick}
       />
     );
