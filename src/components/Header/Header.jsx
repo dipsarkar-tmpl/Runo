@@ -48,7 +48,7 @@ export default function Header() {
           console.error("Error fetching data:", error);
         });
     } else {
-      setSearchResults([]);
+      setSearchResults([]); 
     }
   }, [searchKeyword]);
 
@@ -149,19 +149,19 @@ export default function Header() {
           </ul>
         </div>
       </nav>
-      
-     
+
       {searchOpen && (
-         
         <div className={`search-container ${menuOpen ? "open" : "close"}`}>
-          
-            <input
-              className="search-container-input"
-              placeholder="Search content..."
-              value={searchKeyword}
-              onChange={handleSearchInputChange}
-            />
-            {searchResults.length > 0 ?
+          <input
+            className="search-container-input"
+            placeholder="Search content..."
+            value={searchKeyword}
+            onChange={handleSearchInputChange}
+          />
+          {searchKeyword !== "" ? (
+            searchResults.length === 0 ? (
+              <p>No results found.</p>
+            ) : (
               <div className="result">
                 <ul className="search-results">
                   {searchResults.map((result) => (
@@ -173,15 +173,10 @@ export default function Header() {
                     </li>
                   ))}
                 </ul>
-                
-              </div>:
-              
-              <p>No results found.</p>
-                  }
-             
-            
-          </div>
-        
+              </div>
+            )
+          ) : null}
+        </div>
       )}
     </>
   );
